@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<system id="5ae46928-48be-11ea-87ad-9cb6d0beadb0" xmlns="http://www.plejd.com/schema/System" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.plejd.com/schema/System ../../../idoru-xmlschema/System.xsd">
+  <beacon-region value=""/>
+  <label value="VBHtrainingRoom"/>
+  <url value="http://dashboard.vbhi.eu/"/>
+  <description>
+  </description>
+  <!-- Main Deck -->
+  <merge include="maindeck/guest_cabin_ps.xml"/>
+  <merge include="ownerdeck/owner_stateroom.xml"/>
+  <!-- Remotes -->
+  <remotes>
+    <!-- Define the Plejd remote -->
+    <prcpremote id="prcp">
+      <port value="8000"/>
+      <verbose value="0"/>
+    </prcpremote>
+    <webremote id="web"/>
+  </remotes>
+</system>
