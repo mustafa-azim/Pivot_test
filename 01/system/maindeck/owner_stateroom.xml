@@ -30,6 +30,17 @@
               <devices>
                 <device value="tv-owner_stateroom"/>
                 <device value="speakers-owner_stateroom"/>
+                <device value="appletv-owner_stateroom"/>
+                <device value="denonavreceiver-owner_stateroom"/>
+              </devices>
+            </zone>
+            <zone id="bathroom">
+              <label value="bathroom"/>
+              <icon value=""/>
+              <description>
+                    </description>
+              <devices>
+                <device value="speakers-bathroom"/>
               </devices>
             </zone>
           </zones>
@@ -38,15 +49,48 @@
     </level>
   </locations>
   <devices>
+    
+    <device id="denonavreceiver-owner_stateroom">
+        <label value="Denon AV Receiver"/>
+        <prototype value="denon:x4000:1"/>
+        <interface id="main">
+          <channel id="network">
+            <provider value="network"/>
+            <address value="10.128.240.93"/>
+          </channel>  
+        </interface>
+        <connections>
+          <connection port="hdmimonitor2" targetdevice="tv-owner_stateroom" targetport="hdmi1"/>
+          <connection port="mainzone" targetdevice="speakers-owner_stateroom" targetport="in"/>
+          <connection port="zone2" targetdevice="speakers-bathroom" targetport="in"/>
+        </connections>
+    </device>
+
+    <device id="appletv-owner_stateroom">
+        <label value="Apple TV"/>
+        <prototype value="apple:appletv:simple"/>
+        <interface id="main">
+          <channel id="ir">
+            <provider value="crestron"/>
+            <address value="10.128.240.13"/>
+            <connector value="6:1"/>
+            <reuse value="true"/>
+            <read_timeout value="50000"/>
+          </channel>
+        </interface>
+        <connections>
+            <connection port="out" targetdevice="denonavreceiver-owner_stateroom" targetport="sat/cbl"/>
+        </connections>
+    </device>
+
     <device id="tv-owner_stateroom">
       <label value="TV"/>
-      <prototype value="samsung:ue55ju7000:monitor"/>
+      <prototype value="samsung:generictv:audio"/>
       <interface id="main">
         <channel id="ir">
           <provider value="crestron"/>
-          <address value=""/>
-          <port value=""/>
-          <connector value=""/>
+          <address value="10.128.240.13"/>
+          <connector value="6:2"/>
           <reuse value="true"/>
           <read_timeout value="50000"/>
         </channel>
@@ -57,5 +101,13 @@
       <label value="Speakers"/>
       <priority value="100"/>
     </device>
+    <device id="speakers-bathroom">
+      <prototype value="generic:speakers:1"/>
+      <icon value="area_bathroom"/>
+      <label value="Bathroom speaker"/>
+      <priority value="200"/>
+    </device>
+
+
   </devices>
 </system>
