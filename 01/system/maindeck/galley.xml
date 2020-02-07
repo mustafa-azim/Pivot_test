@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<system id="101a54c0-4986-11ea-8c0b-8cec4b009550" xmlns="http://www.plejd.com/schema/System" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.plejd.com/schema/System ../../../../idoru-xmlschema/System.xsd">
+  <label value="MustafaYacht"/>
+  <locations>
+    <level id="maindeck">
+      <label value="Main Deck"/>
+      <priority value="200"/>
+      <areas>
+        <area id="galley">
+          <label value="Main Galley"/>
+          <icon value="image://area_images/galley.jpg"/>
+          <priority value=""/>
+          <description>
+            </description>
+          <beacon>
+            <major value=""/>
+            <minor value=""/>
+            <!--
+                <proximity value="near"/>
+                <login-accuracy value="3.0"/>
+                <logout-accuracy value="1.0"/>
+                -->
+          </beacon>
+          <zones>
+            <zone id="main">
+              <label value="Main Galley"/>
+              <icon value=""/>
+              <description>
+                    </description>
+              <devices>
+                <device value="speakers-galley"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+      </areas>
+    </level>
+  </locations>
+  <devices>
+    <device id="speakers-galley">
+      <prototype value="speakers:surround:1"/>
+      <label value="Speakers"/>
+      <priority value="100"/>
+    </device>
+  </devices>
+</system>

@@ -1,0 +1,68 @@
+{
+	"levels": [{
+		"id": "lowerdeck",
+		"label": "Lower Deck",
+		"prio": 100,
+		"areas": [{
+			"id": "crew_mess",
+			"label": "Crew Mess",
+			"icon": "image://area_images/crew_mess.jpg",
+			"major": "",
+			"minor": "",
+			"tv": "samsung:ue55ju7000:monitor",
+			"speakers": "speakers:surround:1"
+		}, {
+			"id": "mini_beach_club",
+			"label": "Mini Beach Club",
+			"icon": "image://area_images/mini_beach_club.jpg",
+			"major": "",
+			"minor": "",
+			"tv": "samsung:ue55ju7000:monitor",
+			"speakers": "speakers:surround:1"
+		}, {
+			"id": "guest_suite",
+			"label": "Guest Suite",
+			"icon": "image://area_images/guest_suite.jpg",
+			"major": "",
+			"minor": "",
+			"tv": "samsung:ue55ju7000:monitor",
+			"speakers": "speakers:surround:1"
+		}]
+	}, {
+		"id": "maindeck",
+		"label": "Main Deck",
+		"prio": 200,
+		"areas": [{
+			"id": "galley",
+			"label": "Main Galley",
+			"icon": "image://area_images/galley.jpg",
+			"major": "",
+			"minor": "",
+			"speakers": "speakers:surround:1"
+		}, {
+			"id": "bar",
+			"label": "Bar",
+			"icon": "image://area_images/bar.jpg",
+			"major": "",
+			"minor": "",
+			"tv": "samsung:ue55ju7000:monitor",
+			"speakers": "speakers:surround:1"
+		}, {
+			"id": "owner_bathroom",
+			"label": "Owner Bathroom",
+			"icon": "image://area_images/onwer_bathroom.jpg",
+			"major": "",
+			"minor": "",
+			"tv": "samsung:ue55ju7000:monitor",
+			"speakers": "speakers:surround:1"
+		}, {
+			"id": "owner_stateroom",
+			"label": "Owner Stateroom",
+			"icon": "image://area_images/owner_stateroom.jpg",
+			"major": "",
+			"minor": "",
+			"tv": "samsung:ue55ju7000:monitor",
+			"speakers": "speakers:surround:1"
+		}]
+	}]
+}

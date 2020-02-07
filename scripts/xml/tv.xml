@@ -1,0 +1,14 @@
+<device id="tv-$areaname">
+	<label value="TV"/>
+	<prototype value="$prototype"/>
+	<interface id="main">
+		<channel id="ir">
+			<provider value="crestron"/>
+			<address value=""/>
+			<port value=""/>
+			<connector value=""/>
+			<reuse value="true"/>
+			<read_timeout value="50000"/>
+		</channel>
+	</interface>
+</device>

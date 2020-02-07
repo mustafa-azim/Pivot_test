@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<system id="$systemid" xmlns="http://www.plejd.com/schema/System" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.plejd.com/schema/System ../../../../idoru-xmlschema/System.xsd">
+	<label value="$project_buildnr"/>
+	<locations>
+		$locations
+	</locations>
+	<devices>
+		$devices
+	</devices>
+</system>

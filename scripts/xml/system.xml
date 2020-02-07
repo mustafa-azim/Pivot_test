@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system id="$systemid"
+  xmlns="http://www.plejd.com/schema/System"
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:schemaLocation='http://www.plejd.com/schema/System ../../../idoru-xmlschema/System.xsd'>
+
+  <beacon-region value=""/>
+  <label value="$project_buildnr" />
+  <url value="http://dashboard.vbhi.eu/"/>
+  <description>
+  </description>
+  $includes
+  <!-- Remotes -->
+  <remotes>
+    <!-- Define the Plejd remote -->
+    <prcpremote id="prcp">
+      <port value="8000"/>
+      <verbose value="0"/>
+    </prcpremote>
+    <webremote id="web"/>
+  </remotes>
+</system>

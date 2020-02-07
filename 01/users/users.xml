@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<system id="101a54c0-4986-11ea-8c0b-8cec4b009550">
+  <users>
+    <user id="root">
+      <pin value="0000"/>
+      <restricted-devices>
+        <!-- <device id="power"/> -->
+      </restricted-devices>
+      <allowed-locations>
+        <level id="lowerdeck">
+          <areas>
+            <area id="crew_mess"/>
+            <area id="mini_beach_club"/>
+            <area id="guest_suite"/>
+          </areas>
+        </level>
+        <level id="maindeck">
+          <areas>
+            <area id="galley"/>
+            <area id="bar"/>
+            <area id="owner_bathroom"/>
+            <area id="owner_stateroom"/>
+          </areas>
+        </level>
+      </allowed-locations>
+    </user>
+  </users>
+</system>

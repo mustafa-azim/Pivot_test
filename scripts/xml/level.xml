@@ -1,0 +1,33 @@
+<level id="$levelid">
+    <label value="$levellabel"/>
+    <priority value="$levelprio"/>
+    <areas>
+        <area id="$areaid">
+            <label value="$arealabel"/>
+            <icon value="$areaicon"/>
+            <priority value=""/>
+            <description>
+            </description>
+            <beacon>
+                <major value="$area_major"/>
+                <minor value="$area_minor"/>
+                <!--
+                <proximity value="near"/>
+                <login-accuracy value="3.0"/>
+                <logout-accuracy value="1.0"/>
+                -->
+            </beacon>
+            <zones>
+                <zone id="main">
+                    <label value="$arealabel"/>
+                    <icon value=""/>
+                    <description>
+                    </description>
+                    <devices>
+                        $devices
+                    </devices>
+                </zone>
+            </zones>
+        </area>
+    </areas>
+</level>

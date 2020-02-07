@@ -1,0 +1,5 @@
+<device id="speakers-$areaname">
+	<prototype value="$prototype"/>
+	<label value="Speakers"/>
+	<priority value="100"/>
+</device>
