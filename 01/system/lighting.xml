@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<system id="101a54c0-4986-11ea-8c0b-8cec4b009550" xmlns="http://www.plejd.com/schema/System" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.plejd.com/schema/System ../../../idoru-xmlschema/System.xsd">
+  <label value="MustafaYacht"/>
+  
+  <!--Define levels/areas/devices here-->
+  <locations>
+    <level id="maindeck">
+      <areas>
+        <area id="owner_stateroom">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="keypad1_hwqs_lutron"/>
+                <device value="lighting1_downlight"/>
+                <device value="lighting2_uplight"/>
+                <device value="lighting3_walllight"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+      </areas>
+    </level>
+  </locations>
+
+  <devices>     <!--Keypad1_hwqs_lutron-->
+    <device id="keypad1_hwqs_lutron">
+      <prototype value="lutron:hwqs:keypad"/>
+      <label value="Lights"/>
+      <priority value="1000"/>
+			<category value="Lights"/>
+			<icon value="comfort_light"/>
+			<label value="Lights"/>
+			<interface id="main">
+				<channel id="network">
+					<provider value="network"/>
+					<address value="10.10.132.20"/>
+					<connector value="3"/>    <!--Keypad ID from integration report-->
+				</channel>
+          <driver>
+					<verbose value="3"/>
+					<on-start_1_detail value="buttons:5:label"/>
+					<on-start_1_value value="High"/>
+					<on-start_2_detail value="buttons:6:label"/>
+					<on-start_2_value value="Mid"/>
+					<on-start_3_detail value="buttons:7:label"/>
+					<on-start_3_value value="Low"/>
+					<on-start_4_detail value="buttons:8:label"/>
+					<on-start_4_value value="Off"/>
+				  </driver>
+      </interface>
+    </device>
+
+    <device id="lighting1_downlight">
+          <prototype value="lutron:hwqs:zone" />
+          <priority value="800"/>
+          <label value="Downlights 1"/>
+          <interface id="main">
+            <channel id="network">
+              <provider value="network"/>
+              <address value="10.10.132.20"/>
+              <connector value="318"/>    <!--Keypad ID from integration report-->
+            </channel>
+          </interface>
+        </device>
+
+    <device id="lighting2_downlight">
+          <prototype value="lutron:hwqs:zone" />
+          <priority value="800"/>
+          <label value="Downlights 2"/>
+          <interface id="main">
+            <channel id="network">
+              <provider value="network"/>
+              <address value="10.10.132.20"/>
+              <connector value="319"/>    <!--Keypad ID from integration report-->
+            </channel>
+          </interface>
+        </device>
+
+    <device id="lighting3_downlight">
+          <prototype value="lutron:hwqs:zone" />
+          <priority value="800"/>
+          <label value="Downlights 3"/>
+          <interface id="main">
+            <channel id="network">
+              <provider value="network"/>
+              <address value="10.10.132.20"/>
+              <connector value="320"/>    <!--Keypad ID from integration report-->
+            </channel>
+          </interface>
+        </device>
+
+  </devices>
+  
+ </system>

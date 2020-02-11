@@ -1,6 +1,5 @@
 <?xml version="1.0" ?>
 <system id="101a54c0-4986-11ea-8c0b-8cec4b009550" xmlns="http://www.plejd.com/schema/System" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.plejd.com/schema/System ../../../idoru-xmlschema/System.xsd">
-  <beacon-region value=""/>
   <label value="MustafaYacht"/>
   <url value="http://www.google.com/"/>
   <description>
@@ -13,6 +12,12 @@
   <merge include="maindeck/galley.xml"/>
   <merge include="maindeck/bar.xml"/>
   <merge include="maindeck/owner_stateroom.xml"/>
+  
+  
+  <!--Lighting-->
+  <merge include="lighting.xml"/>
+  
+
   <!-- Remotes -->
   <remotes>
     <!-- Define the Plejd remote -->
