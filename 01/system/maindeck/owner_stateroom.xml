@@ -32,6 +32,7 @@
                 <device value="speakers-owner_stateroom"/>
                 <device value="appletv-owner_stateroom"/>
                 <device value="denonavreceiver-owner_stateroom"/>
+                <device value="sky_owner_stateroom"/>
               </devices>
             </zone>
             <zone id="bathroom">
@@ -49,38 +50,55 @@
     </level>
   </locations>
   <devices>
-    
+
     <device id="denonavreceiver-owner_stateroom">
-        <label value="Denon AV Receiver"/>
-        <prototype value="denon:x4000:1"/>
-        <interface id="main">
-          <channel id="network">
-            <provider value="network"/>
-            <address value="10.128.240.93"/>
-          </channel>  
-        </interface>
-        <connections>
-          <connection port="hdmimonitor2" targetdevice="tv-owner_stateroom" targetport="hdmi1"/>
-          <connection port="mainzone" targetdevice="speakers-owner_stateroom" targetport="in"/>
-          <connection port="zone2" targetdevice="speakers-bathroom" targetport="in"/>
-        </connections>
+      <label value="Denon AV Receiver"/>
+      <prototype value="denon:x4000:1"/>
+      <interface id="main">
+        <channel id="network">
+          <provider value="network"/>
+          <address value="10.128.240.93"/>
+        </channel>
+      </interface>
+      <connections>
+        <connection port="hdmimonitor2" targetdevice="tv-owner_stateroom" targetport="hdmi1"/>
+        <connection port="mainzone" targetdevice="speakers-owner_stateroom" targetport="in"/>
+        <connection port="zone2" targetdevice="speakers-bathroom" targetport="in"/>
+      </connections>
+    </device>
+
+    <device id="sky_owner_stateroom">
+      <label value="Sky HD Receiver"/>
+      <prototype value="bskyb:generic:1"/>
+      <interface id="main">
+        <channel id="ir">
+          <provider value="crestron"/>
+          <address value="10.128.240.13"/>
+          <connector value="6:3"/>
+          <reuse value="true"/>
+          <read_timeout value="50000"/>
+        </channel>
+      </interface>
+      <connections>
+        <connection port="out" targetdevice="denonavreceiver-owner_stateroom" targetport="bd"/>
+      </connections>
     </device>
 
     <device id="appletv-owner_stateroom">
-        <label value="Apple TV"/>
-        <prototype value="apple:appletv:simple"/>
-        <interface id="main">
-          <channel id="ir">
-            <provider value="crestron"/>
-            <address value="10.128.240.13"/>
-            <connector value="6:1"/>
-            <reuse value="true"/>
-            <read_timeout value="50000"/>
-          </channel>
-        </interface>
-        <connections>
-            <connection port="out" targetdevice="denonavreceiver-owner_stateroom" targetport="sat/cbl"/>
-        </connections>
+      <label value="Apple TV"/>
+      <prototype value="apple:appletv:simple"/>
+      <interface id="main">
+        <channel id="ir">
+          <provider value="crestron"/>
+          <address value="10.128.240.13"/>
+          <connector value="6:1"/>
+          <reuse value="true"/>
+          <read_timeout value="50000"/>
+        </channel>
+      </interface>
+      <connections>
+        <connection port="out" targetdevice="denonavreceiver-owner_stateroom" targetport="sat/cbl"/>
+      </connections>
     </device>
 
     <device id="tv-owner_stateroom">
