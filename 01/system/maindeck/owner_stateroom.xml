@@ -57,7 +57,7 @@
       <interface id="main">
         <channel id="network">
           <provider value="network"/>
-          <address value="10.128.240.93"/>
+          <address value="10.128.240.55"/>
         </channel>
       </interface>
       <connections>

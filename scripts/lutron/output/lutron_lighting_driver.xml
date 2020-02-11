@@ -1,0 +1,785 @@
+<?xml version="1.0" ?>
+<device xmlns="http://www.plejd.com/schema/Device" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.plejd.com/schema/Device ../../../../idoru-xmlschema/Device.xsd">
+  <state value="none"/>
+  <label value="Lutron"/>
+  <utility value="true"/>
+  <icon value="comfort_light"/>
+  <category value="Lights"/>
+  <!-- 
+      Generated: 2020-02-11 13:11:57
+   -->
+  <interfaces>
+    <interface id="dummy">
+      <java-driver>
+        <class value="com.plejd.idoru.dummy.devicedrv.DummyDriver"/>
+      </java-driver>
+    </interface>
+    <interface id="main">
+      <channel id="network">
+        <type value="packet"/>
+        <properties>
+          <port value="23"/>
+          <packet-end_hex value="0d 0a"/>
+          <!-- what you receive -->
+          <packet-suffix_hex value="0d 0a"/>
+          <!-- what you send -->
+        </properties>
+      </channel>
+      <java-driver>
+        <class value="com.plejd.drivers.xml.GenericControlDriver"/>
+        <properties>
+          <duration value="0"/>
+          <on-open_network_sequence_1_alias value="pivot_send_user"/>
+          <on-open_network_sequence_1_delay value="2000"/>
+          <on-open_network_sequence_2_alias value="pivot_send_password"/>
+          <on-open_network_sequence_2_delay value="2000"/>
+          <on-open_network_sequence_3 value="?DEVICE,76,86,9"/>
+          <on-open_network_sequence_4 value="?DEVICE,76,87,9"/>
+          <on-open_network_sequence_5 value="?DEVICE,76,88,9"/>
+          <on-open_network_sequence_6 value="?DEVICE,76,90,9"/>
+          <on-open_network_sequence_7 value="?DEVICE,92,86,9"/>
+          <on-open_network_sequence_8 value="?DEVICE,92,87,9"/>
+          <on-open_network_sequence_9 value="?DEVICE,92,88,9"/>
+          <on-open_network_sequence_10 value="?DEVICE,92,90,9"/>
+          <on-open_network_sequence_11 value="?DEVICE,83,86,9"/>
+          <on-open_network_sequence_12 value="?DEVICE,83,87,9"/>
+          <on-open_network_sequence_13 value="?DEVICE,83,88,9"/>
+          <on-open_network_sequence_14 value="?DEVICE,83,90,9"/>
+          <on-open_network_sequence_15 value="?DEVICE,94,86,9"/>
+          <on-open_network_sequence_16 value="?DEVICE,94,87,9"/>
+          <on-open_network_sequence_17 value="?DEVICE,94,88,9"/>
+          <on-open_network_sequence_18 value="?DEVICE,94,90,9"/>
+          <on-open_network_sequence_19 value="?DEVICE,56,86,9"/>
+          <on-open_network_sequence_20 value="?DEVICE,56,87,9"/>
+          <on-open_network_sequence_21 value="?DEVICE,56,88,9"/>
+          <on-open_network_sequence_22 value="?DEVICE,56,90,9"/>
+          <on-open_network_sequence_23 value="?DEVICE,73,86,9"/>
+          <on-open_network_sequence_24 value="?DEVICE,73,87,9"/>
+          <on-open_network_sequence_25 value="?DEVICE,73,88,9"/>
+          <on-open_network_sequence_26 value="?DEVICE,73,90,9"/>
+          <pivot_send_user value="av"/>
+          <pivot_send_password value="av"/>
+          <!-- will be prompted with login -->
+          <network_ping value="?SYSTEM,1"/>
+          <!--
+                  commands
+            -->
+          <keypad_76_1_btn_6_crew_mess value="#DEVICE,76,6,3&#13;&#10;#DEVICE,76,6,4"/>
+          <keypad_76_1_btn_6_crew_mess_start value="#DEVICE,76,6,3"/>
+          <keypad_76_1_btn_6_crew_mess_continue value="#DEVICE,76,6,5"/>
+          <keypad_76_1_btn_6_crew_mess_stop value="#DEVICE,76,6,4"/>
+          <keypad_76_1_btn_7_crew_mess value="#DEVICE,76,7,3&#13;&#10;#DEVICE,76,7,4"/>
+          <keypad_76_1_btn_7_crew_mess_start value="#DEVICE,76,7,3"/>
+          <keypad_76_1_btn_7_crew_mess_continue value="#DEVICE,76,7,5"/>
+          <keypad_76_1_btn_7_crew_mess_stop value="#DEVICE,76,7,4"/>
+          <keypad_76_1_btn_8_crew_mess value="#DEVICE,76,8,3&#13;&#10;#DEVICE,76,8,4"/>
+          <keypad_76_1_btn_8_crew_mess_start value="#DEVICE,76,8,3"/>
+          <keypad_76_1_btn_8_crew_mess_continue value="#DEVICE,76,8,5"/>
+          <keypad_76_1_btn_8_crew_mess_stop value="#DEVICE,76,8,4"/>
+          <keypad_76_1_btn_10_crew_mess value="#DEVICE,76,10,3&#13;&#10;#DEVICE,76,10,4"/>
+          <keypad_76_1_btn_10_crew_mess_start value="#DEVICE,76,10,3"/>
+          <keypad_76_1_btn_10_crew_mess_continue value="#DEVICE,76,10,5"/>
+          <keypad_76_1_btn_10_crew_mess_stop value="#DEVICE,76,10,4"/>
+          <keypad_92_1_btn_6_main_beach_club value="#DEVICE,92,6,3&#13;&#10;#DEVICE,92,6,4"/>
+          <keypad_92_1_btn_6_main_beach_club_start value="#DEVICE,92,6,3"/>
+          <keypad_92_1_btn_6_main_beach_club_continue value="#DEVICE,92,6,5"/>
+          <keypad_92_1_btn_6_main_beach_club_stop value="#DEVICE,92,6,4"/>
+          <keypad_92_1_btn_7_main_beach_club value="#DEVICE,92,7,3&#13;&#10;#DEVICE,92,7,4"/>
+          <keypad_92_1_btn_7_main_beach_club_start value="#DEVICE,92,7,3"/>
+          <keypad_92_1_btn_7_main_beach_club_continue value="#DEVICE,92,7,5"/>
+          <keypad_92_1_btn_7_main_beach_club_stop value="#DEVICE,92,7,4"/>
+          <keypad_92_1_btn_8_main_beach_club value="#DEVICE,92,8,3&#13;&#10;#DEVICE,92,8,4"/>
+          <keypad_92_1_btn_8_main_beach_club_start value="#DEVICE,92,8,3"/>
+          <keypad_92_1_btn_8_main_beach_club_continue value="#DEVICE,92,8,5"/>
+          <keypad_92_1_btn_8_main_beach_club_stop value="#DEVICE,92,8,4"/>
+          <keypad_92_1_btn_10_main_beach_club value="#DEVICE,92,10,3&#13;&#10;#DEVICE,92,10,4"/>
+          <keypad_92_1_btn_10_main_beach_club_start value="#DEVICE,92,10,3"/>
+          <keypad_92_1_btn_10_main_beach_club_continue value="#DEVICE,92,10,5"/>
+          <keypad_92_1_btn_10_main_beach_club_stop value="#DEVICE,92,10,4"/>
+          <keypad_83_1_btn_6_guest_suite value="#DEVICE,83,6,3&#13;&#10;#DEVICE,83,6,4"/>
+          <keypad_83_1_btn_6_guest_suite_start value="#DEVICE,83,6,3"/>
+          <keypad_83_1_btn_6_guest_suite_continue value="#DEVICE,83,6,5"/>
+          <keypad_83_1_btn_6_guest_suite_stop value="#DEVICE,83,6,4"/>
+          <keypad_83_1_btn_7_guest_suite value="#DEVICE,83,7,3&#13;&#10;#DEVICE,83,7,4"/>
+          <keypad_83_1_btn_7_guest_suite_start value="#DEVICE,83,7,3"/>
+          <keypad_83_1_btn_7_guest_suite_continue value="#DEVICE,83,7,5"/>
+          <keypad_83_1_btn_7_guest_suite_stop value="#DEVICE,83,7,4"/>
+          <keypad_83_1_btn_8_guest_suite value="#DEVICE,83,8,3&#13;&#10;#DEVICE,83,8,4"/>
+          <keypad_83_1_btn_8_guest_suite_start value="#DEVICE,83,8,3"/>
+          <keypad_83_1_btn_8_guest_suite_continue value="#DEVICE,83,8,5"/>
+          <keypad_83_1_btn_8_guest_suite_stop value="#DEVICE,83,8,4"/>
+          <keypad_83_1_btn_10_guest_suite value="#DEVICE,83,10,3&#13;&#10;#DEVICE,83,10,4"/>
+          <keypad_83_1_btn_10_guest_suite_start value="#DEVICE,83,10,3"/>
+          <keypad_83_1_btn_10_guest_suite_continue value="#DEVICE,83,10,5"/>
+          <keypad_83_1_btn_10_guest_suite_stop value="#DEVICE,83,10,4"/>
+          <keypad_94_1_btn_6_galley value="#DEVICE,94,6,3&#13;&#10;#DEVICE,94,6,4"/>
+          <keypad_94_1_btn_6_galley_start value="#DEVICE,94,6,3"/>
+          <keypad_94_1_btn_6_galley_continue value="#DEVICE,94,6,5"/>
+          <keypad_94_1_btn_6_galley_stop value="#DEVICE,94,6,4"/>
+          <keypad_94_1_btn_7_galley value="#DEVICE,94,7,3&#13;&#10;#DEVICE,94,7,4"/>
+          <keypad_94_1_btn_7_galley_start value="#DEVICE,94,7,3"/>
+          <keypad_94_1_btn_7_galley_continue value="#DEVICE,94,7,5"/>
+          <keypad_94_1_btn_7_galley_stop value="#DEVICE,94,7,4"/>
+          <keypad_94_1_btn_8_galley value="#DEVICE,94,8,3&#13;&#10;#DEVICE,94,8,4"/>
+          <keypad_94_1_btn_8_galley_start value="#DEVICE,94,8,3"/>
+          <keypad_94_1_btn_8_galley_continue value="#DEVICE,94,8,5"/>
+          <keypad_94_1_btn_8_galley_stop value="#DEVICE,94,8,4"/>
+          <keypad_94_1_btn_10_galley value="#DEVICE,94,10,3&#13;&#10;#DEVICE,94,10,4"/>
+          <keypad_94_1_btn_10_galley_start value="#DEVICE,94,10,3"/>
+          <keypad_94_1_btn_10_galley_continue value="#DEVICE,94,10,5"/>
+          <keypad_94_1_btn_10_galley_stop value="#DEVICE,94,10,4"/>
+          <keypad_56_1_btn_6_bar value="#DEVICE,56,6,3&#13;&#10;#DEVICE,56,6,4"/>
+          <keypad_56_1_btn_6_bar_start value="#DEVICE,56,6,3"/>
+          <keypad_56_1_btn_6_bar_continue value="#DEVICE,56,6,5"/>
+          <keypad_56_1_btn_6_bar_stop value="#DEVICE,56,6,4"/>
+          <keypad_56_1_btn_7_bar value="#DEVICE,56,7,3&#13;&#10;#DEVICE,56,7,4"/>
+          <keypad_56_1_btn_7_bar_start value="#DEVICE,56,7,3"/>
+          <keypad_56_1_btn_7_bar_continue value="#DEVICE,56,7,5"/>
+          <keypad_56_1_btn_7_bar_stop value="#DEVICE,56,7,4"/>
+          <keypad_56_1_btn_8_bar value="#DEVICE,56,8,3&#13;&#10;#DEVICE,56,8,4"/>
+          <keypad_56_1_btn_8_bar_start value="#DEVICE,56,8,3"/>
+          <keypad_56_1_btn_8_bar_continue value="#DEVICE,56,8,5"/>
+          <keypad_56_1_btn_8_bar_stop value="#DEVICE,56,8,4"/>
+          <keypad_56_1_btn_10_bar value="#DEVICE,56,10,3&#13;&#10;#DEVICE,56,10,4"/>
+          <keypad_56_1_btn_10_bar_start value="#DEVICE,56,10,3"/>
+          <keypad_56_1_btn_10_bar_continue value="#DEVICE,56,10,5"/>
+          <keypad_56_1_btn_10_bar_stop value="#DEVICE,56,10,4"/>
+          <keypad_73_1_btn_6_owner_stateroom value="#DEVICE,73,6,3&#13;&#10;#DEVICE,73,6,4"/>
+          <keypad_73_1_btn_6_owner_stateroom_start value="#DEVICE,73,6,3"/>
+          <keypad_73_1_btn_6_owner_stateroom_continue value="#DEVICE,73,6,5"/>
+          <keypad_73_1_btn_6_owner_stateroom_stop value="#DEVICE,73,6,4"/>
+          <keypad_73_1_btn_7_owner_stateroom value="#DEVICE,73,7,3&#13;&#10;#DEVICE,73,7,4"/>
+          <keypad_73_1_btn_7_owner_stateroom_start value="#DEVICE,73,7,3"/>
+          <keypad_73_1_btn_7_owner_stateroom_continue value="#DEVICE,73,7,5"/>
+          <keypad_73_1_btn_7_owner_stateroom_stop value="#DEVICE,73,7,4"/>
+          <keypad_73_1_btn_8_owner_stateroom value="#DEVICE,73,8,3&#13;&#10;#DEVICE,73,8,4"/>
+          <keypad_73_1_btn_8_owner_stateroom_start value="#DEVICE,73,8,3"/>
+          <keypad_73_1_btn_8_owner_stateroom_continue value="#DEVICE,73,8,5"/>
+          <keypad_73_1_btn_8_owner_stateroom_stop value="#DEVICE,73,8,4"/>
+          <keypad_73_1_btn_10_owner_stateroom value="#DEVICE,73,10,3&#13;&#10;#DEVICE,73,10,4"/>
+          <keypad_73_1_btn_10_owner_stateroom_start value="#DEVICE,73,10,3"/>
+          <keypad_73_1_btn_10_owner_stateroom_continue value="#DEVICE,73,10,5"/>
+          <keypad_73_1_btn_10_owner_stateroom_stop value="#DEVICE,73,10,4"/>
+          <!-- 
+                  feedback for button status 
+            -->
+          <feedback_1_regex value="~DEVICE,76,86,9,([0-1])"/>
+          <feedback_1_regex_detail value="keypad_76_1_btn_6_crew_mess"/>
+          <feedback_2_regex value="~DEVICE,76,87,9,([0-1])"/>
+          <feedback_2_regex_detail value="keypad_76_1_btn_7_crew_mess"/>
+          <feedback_3_regex value="~DEVICE,76,88,9,([0-1])"/>
+          <feedback_3_regex_detail value="keypad_76_1_btn_8_crew_mess"/>
+          <feedback_4_regex value="~DEVICE,76,90,9,([0-1])"/>
+          <feedback_4_regex_detail value="keypad_76_1_btn_10_crew_mess"/>
+          <feedback_5_regex value="~DEVICE,92,86,9,([0-1])"/>
+          <feedback_5_regex_detail value="keypad_92_1_btn_6_main_beach_club"/>
+          <feedback_6_regex value="~DEVICE,92,87,9,([0-1])"/>
+          <feedback_6_regex_detail value="keypad_92_1_btn_7_main_beach_club"/>
+          <feedback_7_regex value="~DEVICE,92,88,9,([0-1])"/>
+          <feedback_7_regex_detail value="keypad_92_1_btn_8_main_beach_club"/>
+          <feedback_8_regex value="~DEVICE,92,90,9,([0-1])"/>
+          <feedback_8_regex_detail value="keypad_92_1_btn_10_main_beach_club"/>
+          <feedback_9_regex value="~DEVICE,83,86,9,([0-1])"/>
+          <feedback_9_regex_detail value="keypad_83_1_btn_6_guest_suite"/>
+          <feedback_10_regex value="~DEVICE,83,87,9,([0-1])"/>
+          <feedback_10_regex_detail value="keypad_83_1_btn_7_guest_suite"/>
+          <feedback_11_regex value="~DEVICE,83,88,9,([0-1])"/>
+          <feedback_11_regex_detail value="keypad_83_1_btn_8_guest_suite"/>
+          <feedback_12_regex value="~DEVICE,83,90,9,([0-1])"/>
+          <feedback_12_regex_detail value="keypad_83_1_btn_10_guest_suite"/>
+          <feedback_13_regex value="~DEVICE,94,86,9,([0-1])"/>
+          <feedback_13_regex_detail value="keypad_94_1_btn_6_galley"/>
+          <feedback_14_regex value="~DEVICE,94,87,9,([0-1])"/>
+          <feedback_14_regex_detail value="keypad_94_1_btn_7_galley"/>
+          <feedback_15_regex value="~DEVICE,94,88,9,([0-1])"/>
+          <feedback_15_regex_detail value="keypad_94_1_btn_8_galley"/>
+          <feedback_16_regex value="~DEVICE,94,90,9,([0-1])"/>
+          <feedback_16_regex_detail value="keypad_94_1_btn_10_galley"/>
+          <feedback_17_regex value="~DEVICE,56,86,9,([0-1])"/>
+          <feedback_17_regex_detail value="keypad_56_1_btn_6_bar"/>
+          <feedback_18_regex value="~DEVICE,56,87,9,([0-1])"/>
+          <feedback_18_regex_detail value="keypad_56_1_btn_7_bar"/>
+          <feedback_19_regex value="~DEVICE,56,88,9,([0-1])"/>
+          <feedback_19_regex_detail value="keypad_56_1_btn_8_bar"/>
+          <feedback_20_regex value="~DEVICE,56,90,9,([0-1])"/>
+          <feedback_20_regex_detail value="keypad_56_1_btn_10_bar"/>
+          <feedback_21_regex value="~DEVICE,73,86,9,([0-1])"/>
+          <feedback_21_regex_detail value="keypad_73_1_btn_6_owner_stateroom"/>
+          <feedback_22_regex value="~DEVICE,73,87,9,([0-1])"/>
+          <feedback_22_regex_detail value="keypad_73_1_btn_7_owner_stateroom"/>
+          <feedback_23_regex value="~DEVICE,73,88,9,([0-1])"/>
+          <feedback_23_regex_detail value="keypad_73_1_btn_8_owner_stateroom"/>
+          <feedback_24_regex value="~DEVICE,73,90,9,([0-1])"/>
+          <feedback_24_regex_detail value="keypad_73_1_btn_10_owner_stateroom"/>
+        </properties>
+      </java-driver>
+    </interface>
+  </interfaces>
+  <components>
+    <!-- Crew mess -->
+    <device id="keypad_76_1_crew_mess">
+      <category value="Lights"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_light"/>
+      <settings>
+        <trigger id="6">
+          <command value="keypad_76_1_btn_6_crew_mess"/>
+          <label value="Day"/>
+          <active>
+            <legacy-condition detail="keypad_76_1_btn_6_crew_mess" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="7">
+          <command value="keypad_76_1_btn_7_crew_mess"/>
+          <label value="Mood"/>
+          <active>
+            <legacy-condition detail="keypad_76_1_btn_7_crew_mess" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="8">
+          <command value="keypad_76_1_btn_8_crew_mess"/>
+          <label value="Night"/>
+          <active>
+            <legacy-condition detail="keypad_76_1_btn_8_crew_mess" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="10">
+          <command value="keypad_76_1_btn_10_crew_mess"/>
+          <label value="Off"/>
+          <active>
+            <legacy-condition detail="keypad_76_1_btn_10_crew_mess" equals="1"/>
+          </active>
+          <priority value="1870"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="light"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="light"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Main Beach Club -->
+    <device id="keypad_92_1_main_beach_club">
+      <category value="Lights"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_light"/>
+      <settings>
+        <trigger id="6">
+          <command value="keypad_92_1_btn_6_main_beach_club"/>
+          <label value="Day"/>
+          <active>
+            <legacy-condition detail="keypad_92_1_btn_6_main_beach_club" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="7">
+          <command value="keypad_92_1_btn_7_main_beach_club"/>
+          <label value="Mood"/>
+          <active>
+            <legacy-condition detail="keypad_92_1_btn_7_main_beach_club" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="8">
+          <command value="keypad_92_1_btn_8_main_beach_club"/>
+          <label value="Night"/>
+          <active>
+            <legacy-condition detail="keypad_92_1_btn_8_main_beach_club" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="10">
+          <command value="keypad_92_1_btn_10_main_beach_club"/>
+          <label value="Off"/>
+          <active>
+            <legacy-condition detail="keypad_92_1_btn_10_main_beach_club" equals="1"/>
+          </active>
+          <priority value="1870"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="light"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="light"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Guest Suite -->
+    <device id="keypad_83_1_guest_suite">
+      <category value="Lights"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_light"/>
+      <settings>
+        <trigger id="6">
+          <command value="keypad_83_1_btn_6_guest_suite"/>
+          <label value="Day"/>
+          <active>
+            <legacy-condition detail="keypad_83_1_btn_6_guest_suite" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="7">
+          <command value="keypad_83_1_btn_7_guest_suite"/>
+          <label value="Mood"/>
+          <active>
+            <legacy-condition detail="keypad_83_1_btn_7_guest_suite" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="8">
+          <command value="keypad_83_1_btn_8_guest_suite"/>
+          <label value="Night"/>
+          <active>
+            <legacy-condition detail="keypad_83_1_btn_8_guest_suite" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="10">
+          <command value="keypad_83_1_btn_10_guest_suite"/>
+          <label value="Off"/>
+          <active>
+            <legacy-condition detail="keypad_83_1_btn_10_guest_suite" equals="1"/>
+          </active>
+          <priority value="1870"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="light"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="light"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Galley -->
+    <device id="keypad_94_1_galley">
+      <category value="Lights"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_light"/>
+      <settings>
+        <trigger id="6">
+          <command value="keypad_94_1_btn_6_galley"/>
+          <label value="Day"/>
+          <active>
+            <legacy-condition detail="keypad_94_1_btn_6_galley" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="7">
+          <command value="keypad_94_1_btn_7_galley"/>
+          <label value="Mood"/>
+          <active>
+            <legacy-condition detail="keypad_94_1_btn_7_galley" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="8">
+          <command value="keypad_94_1_btn_8_galley"/>
+          <label value="Night"/>
+          <active>
+            <legacy-condition detail="keypad_94_1_btn_8_galley" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="10">
+          <command value="keypad_94_1_btn_10_galley"/>
+          <label value="Off"/>
+          <active>
+            <legacy-condition detail="keypad_94_1_btn_10_galley" equals="1"/>
+          </active>
+          <priority value="1870"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="light"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="light"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Bar -->
+    <device id="keypad_56_1_bar">
+      <category value="Lights"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_light"/>
+      <settings>
+        <trigger id="6">
+          <command value="keypad_56_1_btn_6_bar"/>
+          <label value="Day"/>
+          <active>
+            <legacy-condition detail="keypad_56_1_btn_6_bar" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Lounge</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="7">
+          <command value="keypad_56_1_btn_7_bar"/>
+          <label value="Mood"/>
+          <active>
+            <legacy-condition detail="keypad_56_1_btn_7_bar" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Lounge</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="8">
+          <command value="keypad_56_1_btn_8_bar"/>
+          <label value="Night"/>
+          <active>
+            <legacy-condition detail="keypad_56_1_btn_8_bar" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Lounge</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="10">
+          <command value="keypad_56_1_btn_10_bar"/>
+          <label value="Off"/>
+          <active>
+            <legacy-condition detail="keypad_56_1_btn_10_bar" equals="1"/>
+          </active>
+          <priority value="1870"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Lounge</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="light"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="light"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Owner Stateroom -->
+    <device id="keypad_73_1_owner_stateroom">
+      <category value="Lights"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_light"/>
+      <settings>
+        <trigger id="6">
+          <command value="keypad_73_1_btn_6_owner_stateroom"/>
+          <label value="Day"/>
+          <active>
+            <legacy-condition detail="keypad_73_1_btn_6_owner_stateroom" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Massage</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="7">
+          <command value="keypad_73_1_btn_7_owner_stateroom"/>
+          <label value="Hair"/>
+          <active>
+            <legacy-condition detail="keypad_73_1_btn_7_owner_stateroom" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Massage</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="8">
+          <command value="keypad_73_1_btn_8_owner_stateroom"/>
+          <label value="Massage"/>
+          <active>
+            <legacy-condition detail="keypad_73_1_btn_8_owner_stateroom" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Massage</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+        <trigger id="10">
+          <command value="keypad_73_1_btn_10_owner_stateroom"/>
+          <label value="Off"/>
+          <active>
+            <legacy-condition detail="keypad_73_1_btn_10_owner_stateroom" equals="1"/>
+          </active>
+          <priority value="1870"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Massage</tag>
+            <tag>group_icon:comfort_group_light</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="light"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="light"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="light"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- links -->
+    <link from="out" to="keypad_76_1_crew_mess.in"/>
+    <link from="out" to="keypad_92_1_main_beach_club.in"/>
+    <link from="out" to="keypad_83_1_guest_suite.in"/>
+    <link from="out" to="keypad_94_1_galley.in"/>
+    <link from="out" to="keypad_56_1_bar.in"/>
+    <link from="out" to="keypad_73_1_owner_stateroom.in"/>
+    <!-- producer and output -->
+    <producer id="lightproducer">
+      <products>
+        <product value="light"/>
+      </products>
+    </producer>
+    <port id="out">
+      <products>
+        <product value="light"/>
+      </products>
+    </port>
+    <link from="lightproducer" to="out"/>
+  </components>
+</device>

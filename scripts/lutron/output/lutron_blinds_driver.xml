@@ -1,0 +1,2657 @@
+<?xml version="1.0" ?>
+<device xmlns="http://www.plejd.com/schema/Device" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.plejd.com/schema/Device ../../../../idoru-xmlschema/Device.xsd">
+  <state value="none"/>
+  <label value="Lutron"/>
+  <utility value="true"/>
+  <icon value="comfort_curtain"/>
+  <category value="Curtains"/>
+  <!-- 
+      Generated: 2020-02-11 13:11:57
+   -->
+  <interfaces>
+    <interface id="dummy">
+      <java-driver>
+        <class value="com.plejd.idoru.dummy.devicedrv.DummyDriver"/>
+      </java-driver>
+    </interface>
+    <interface id="main">
+      <channel id="network">
+        <type value="packet"/>
+        <properties>
+          <port value="23"/>
+          <packet-end_hex value="0d 0a"/>
+          <!-- what you receive -->
+          <packet-suffix_hex value="0d 0a"/>
+          <!-- what you send -->
+        </properties>
+      </channel>
+      <java-driver>
+        <class value="com.plejd.drivers.xml.GenericControlDriver"/>
+        <properties>
+          <duration value="0"/>
+          <on-open_network_sequence_1_alias value="pivot_send_user"/>
+          <on-open_network_sequence_1_delay value="2000"/>
+          <on-open_network_sequence_2_alias value="pivot_send_password"/>
+          <on-open_network_sequence_2_delay value="2000"/>
+          <on-open_network_sequence_3 value="?DEVICE,76,81,9"/>
+          <on-open_network_sequence_4 value="?DEVICE,76,83,9"/>
+          <on-open_network_sequence_5 value="?DEVICE,76,85,9"/>
+          <on-open_network_sequence_6 value="?DEVICE,81,82,9"/>
+          <on-open_network_sequence_7 value="?DEVICE,81,84,9"/>
+          <on-open_network_sequence_8 value="?DEVICE,92,81,9"/>
+          <on-open_network_sequence_9 value="?DEVICE,92,83,9"/>
+          <on-open_network_sequence_10 value="?DEVICE,92,85,9"/>
+          <on-open_network_sequence_11 value="?DEVICE,93,82,9"/>
+          <on-open_network_sequence_12 value="?DEVICE,93,84,9"/>
+          <on-open_network_sequence_13 value="?DEVICE,83,81,9"/>
+          <on-open_network_sequence_14 value="?DEVICE,83,83,9"/>
+          <on-open_network_sequence_15 value="?DEVICE,83,85,9"/>
+          <on-open_network_sequence_16 value="?DEVICE,82,82,9"/>
+          <on-open_network_sequence_17 value="?DEVICE,82,84,9"/>
+          <on-open_network_sequence_18 value="?DEVICE,94,81,9"/>
+          <on-open_network_sequence_19 value="?DEVICE,94,83,9"/>
+          <on-open_network_sequence_20 value="?DEVICE,94,85,9"/>
+          <on-open_network_sequence_21 value="?DEVICE,99,82,9"/>
+          <on-open_network_sequence_22 value="?DEVICE,99,84,9"/>
+          <on-open_network_sequence_23 value="?DEVICE,73,82,9"/>
+          <on-open_network_sequence_24 value="?DEVICE,73,84,9"/>
+          <on-open_network_sequence_25 value="?DEVICE,56,81,9"/>
+          <on-open_network_sequence_26 value="?DEVICE,56,83,9"/>
+          <on-open_network_sequence_27 value="?DEVICE,56,85,9"/>
+          <on-open_network_sequence_28 value="?DEVICE,101,81,9"/>
+          <on-open_network_sequence_29 value="?DEVICE,101,82,9"/>
+          <on-open_network_sequence_30 value="?DEVICE,101,83,9"/>
+          <on-open_network_sequence_31 value="?DEVICE,107,81,9"/>
+          <on-open_network_sequence_32 value="?DEVICE,107,83,9"/>
+          <on-open_network_sequence_33 value="?DEVICE,107,85,9"/>
+          <on-open_network_sequence_34 value="?DEVICE,110,81,9"/>
+          <on-open_network_sequence_35 value="?DEVICE,110,83,9"/>
+          <on-open_network_sequence_36 value="?DEVICE,110,85,9"/>
+          <on-open_network_sequence_37 value="?DEVICE,114,82,9"/>
+          <on-open_network_sequence_38 value="?DEVICE,114,84,9"/>
+          <on-open_network_sequence_39 value="?DEVICE,115,81,9"/>
+          <on-open_network_sequence_40 value="?DEVICE,115,83,9"/>
+          <on-open_network_sequence_41 value="?DEVICE,115,85,9"/>
+          <on-open_network_sequence_42 value="?DEVICE,119,82,9"/>
+          <on-open_network_sequence_43 value="?DEVICE,119,84,9"/>
+          <on-open_network_sequence_44 value="?DEVICE,153,82,9"/>
+          <on-open_network_sequence_45 value="?DEVICE,153,84,9"/>
+          <on-open_network_sequence_46 value="?DEVICE,157,82,9"/>
+          <on-open_network_sequence_47 value="?DEVICE,157,84,9"/>
+          <on-open_network_sequence_48 value="?DEVICE,160,81,9"/>
+          <on-open_network_sequence_49 value="?DEVICE,160,83,9"/>
+          <on-open_network_sequence_50 value="?DEVICE,160,85,9"/>
+          <on-open_network_sequence_51 value="?DEVICE,166,82,9"/>
+          <on-open_network_sequence_52 value="?DEVICE,166,84,9"/>
+          <on-open_network_sequence_53 value="?DEVICE,651,81,9"/>
+          <on-open_network_sequence_54 value="?DEVICE,651,83,9"/>
+          <on-open_network_sequence_55 value="?DEVICE,651,85,9"/>
+          <on-open_network_sequence_56 value="?DEVICE,139,82,9"/>
+          <on-open_network_sequence_57 value="?DEVICE,139,84,9"/>
+          <on-open_network_sequence_58 value="?DEVICE,656,81,9"/>
+          <on-open_network_sequence_59 value="?DEVICE,656,83,9"/>
+          <on-open_network_sequence_60 value="?DEVICE,656,85,9"/>
+          <on-open_network_sequence_61 value="?DEVICE,128,82,9"/>
+          <on-open_network_sequence_62 value="?DEVICE,128,84,9"/>
+          <on-open_network_sequence_63 value="?DEVICE,148,81,9"/>
+          <on-open_network_sequence_64 value="?DEVICE,148,83,9"/>
+          <on-open_network_sequence_65 value="?DEVICE,148,85,9"/>
+          <on-open_network_sequence_66 value="?DEVICE,120,81,9"/>
+          <on-open_network_sequence_67 value="?DEVICE,120,82,9"/>
+          <on-open_network_sequence_68 value="?DEVICE,120,83,9"/>
+          <on-open_network_sequence_69 value="?DEVICE,143,82,9"/>
+          <on-open_network_sequence_70 value="?DEVICE,143,84,9"/>
+          <on-open_network_sequence_71 value="?DEVICE,142,81,9"/>
+          <on-open_network_sequence_72 value="?DEVICE,142,82,9"/>
+          <on-open_network_sequence_73 value="?DEVICE,142,83,9"/>
+          <on-open_network_sequence_74 value="?DEVICE,142,84,9"/>
+          <on-open_network_sequence_75 value="?DEVICE,146,82,9"/>
+          <on-open_network_sequence_76 value="?DEVICE,146,84,9"/>
+          <on-open_network_sequence_77 value="?DEVICE,145,81,9"/>
+          <on-open_network_sequence_78 value="?DEVICE,145,82,9"/>
+          <on-open_network_sequence_79 value="?DEVICE,145,83,9"/>
+          <on-open_network_sequence_80 value="?DEVICE,145,84,9"/>
+          <pivot_send_user value="av"/>
+          <pivot_send_password value="av"/>
+          <!-- will be prompted with login -->
+          <network_ping value="?SYSTEM,1"/>
+          <!--
+                  commands
+            -->
+          <keypad_76_1_btn_1_sb_aft_guest_cabin value="#DEVICE,76,1,3&#13;&#10;#DEVICE,76,1,4"/>
+          <keypad_76_1_btn_1_sb_aft_guest_cabin_start value="#DEVICE,76,1,3"/>
+          <keypad_76_1_btn_1_sb_aft_guest_cabin_continue value="#DEVICE,76,1,5"/>
+          <keypad_76_1_btn_1_sb_aft_guest_cabin_stop value="#DEVICE,76,1,4"/>
+          <keypad_76_1_btn_3_sb_aft_guest_cabin value="#DEVICE,76,3,3&#13;&#10;#DEVICE,76,3,4"/>
+          <keypad_76_1_btn_3_sb_aft_guest_cabin_start value="#DEVICE,76,3,3"/>
+          <keypad_76_1_btn_3_sb_aft_guest_cabin_continue value="#DEVICE,76,3,5"/>
+          <keypad_76_1_btn_3_sb_aft_guest_cabin_stop value="#DEVICE,76,3,4"/>
+          <keypad_76_1_btn_5_sb_aft_guest_cabin value="#DEVICE,76,5,3&#13;&#10;#DEVICE,76,5,4"/>
+          <keypad_76_1_btn_5_sb_aft_guest_cabin_start value="#DEVICE,76,5,3"/>
+          <keypad_76_1_btn_5_sb_aft_guest_cabin_continue value="#DEVICE,76,5,5"/>
+          <keypad_76_1_btn_5_sb_aft_guest_cabin_stop value="#DEVICE,76,5,4"/>
+          <keypad_81_2_btn_2_sb_aft_guest_cabin value="#DEVICE,81,2,3&#13;&#10;#DEVICE,81,2,4"/>
+          <keypad_81_2_btn_2_sb_aft_guest_cabin_start value="#DEVICE,81,2,3"/>
+          <keypad_81_2_btn_2_sb_aft_guest_cabin_continue value="#DEVICE,81,2,5"/>
+          <keypad_81_2_btn_2_sb_aft_guest_cabin_stop value="#DEVICE,81,2,4"/>
+          <keypad_81_2_btn_4_sb_aft_guest_cabin value="#DEVICE,81,4,3&#13;&#10;#DEVICE,81,4,4"/>
+          <keypad_81_2_btn_4_sb_aft_guest_cabin_start value="#DEVICE,81,4,3"/>
+          <keypad_81_2_btn_4_sb_aft_guest_cabin_continue value="#DEVICE,81,4,5"/>
+          <keypad_81_2_btn_4_sb_aft_guest_cabin_stop value="#DEVICE,81,4,4"/>
+          <keypad_92_1_btn_1_ps_aft_guest_cabin value="#DEVICE,92,1,3&#13;&#10;#DEVICE,92,1,4"/>
+          <keypad_92_1_btn_1_ps_aft_guest_cabin_start value="#DEVICE,92,1,3"/>
+          <keypad_92_1_btn_1_ps_aft_guest_cabin_continue value="#DEVICE,92,1,5"/>
+          <keypad_92_1_btn_1_ps_aft_guest_cabin_stop value="#DEVICE,92,1,4"/>
+          <keypad_92_1_btn_3_ps_aft_guest_cabin value="#DEVICE,92,3,3&#13;&#10;#DEVICE,92,3,4"/>
+          <keypad_92_1_btn_3_ps_aft_guest_cabin_start value="#DEVICE,92,3,3"/>
+          <keypad_92_1_btn_3_ps_aft_guest_cabin_continue value="#DEVICE,92,3,5"/>
+          <keypad_92_1_btn_3_ps_aft_guest_cabin_stop value="#DEVICE,92,3,4"/>
+          <keypad_92_1_btn_5_ps_aft_guest_cabin value="#DEVICE,92,5,3&#13;&#10;#DEVICE,92,5,4"/>
+          <keypad_92_1_btn_5_ps_aft_guest_cabin_start value="#DEVICE,92,5,3"/>
+          <keypad_92_1_btn_5_ps_aft_guest_cabin_continue value="#DEVICE,92,5,5"/>
+          <keypad_92_1_btn_5_ps_aft_guest_cabin_stop value="#DEVICE,92,5,4"/>
+          <keypad_93_2_btn_2_ps_aft_guest_cabin value="#DEVICE,93,2,3&#13;&#10;#DEVICE,93,2,4"/>
+          <keypad_93_2_btn_2_ps_aft_guest_cabin_start value="#DEVICE,93,2,3"/>
+          <keypad_93_2_btn_2_ps_aft_guest_cabin_continue value="#DEVICE,93,2,5"/>
+          <keypad_93_2_btn_2_ps_aft_guest_cabin_stop value="#DEVICE,93,2,4"/>
+          <keypad_93_2_btn_4_ps_aft_guest_cabin value="#DEVICE,93,4,3&#13;&#10;#DEVICE,93,4,4"/>
+          <keypad_93_2_btn_4_ps_aft_guest_cabin_start value="#DEVICE,93,4,3"/>
+          <keypad_93_2_btn_4_ps_aft_guest_cabin_continue value="#DEVICE,93,4,5"/>
+          <keypad_93_2_btn_4_ps_aft_guest_cabin_stop value="#DEVICE,93,4,4"/>
+          <keypad_83_1_btn_1_sb_fwd_guest_cabin value="#DEVICE,83,1,3&#13;&#10;#DEVICE,83,1,4"/>
+          <keypad_83_1_btn_1_sb_fwd_guest_cabin_start value="#DEVICE,83,1,3"/>
+          <keypad_83_1_btn_1_sb_fwd_guest_cabin_continue value="#DEVICE,83,1,5"/>
+          <keypad_83_1_btn_1_sb_fwd_guest_cabin_stop value="#DEVICE,83,1,4"/>
+          <keypad_83_1_btn_3_sb_fwd_guest_cabin value="#DEVICE,83,3,3&#13;&#10;#DEVICE,83,3,4"/>
+          <keypad_83_1_btn_3_sb_fwd_guest_cabin_start value="#DEVICE,83,3,3"/>
+          <keypad_83_1_btn_3_sb_fwd_guest_cabin_continue value="#DEVICE,83,3,5"/>
+          <keypad_83_1_btn_3_sb_fwd_guest_cabin_stop value="#DEVICE,83,3,4"/>
+          <keypad_83_1_btn_5_sb_fwd_guest_cabin value="#DEVICE,83,5,3&#13;&#10;#DEVICE,83,5,4"/>
+          <keypad_83_1_btn_5_sb_fwd_guest_cabin_start value="#DEVICE,83,5,3"/>
+          <keypad_83_1_btn_5_sb_fwd_guest_cabin_continue value="#DEVICE,83,5,5"/>
+          <keypad_83_1_btn_5_sb_fwd_guest_cabin_stop value="#DEVICE,83,5,4"/>
+          <keypad_82_2_btn_2_sb_fwd_guest_cabin value="#DEVICE,82,2,3&#13;&#10;#DEVICE,82,2,4"/>
+          <keypad_82_2_btn_2_sb_fwd_guest_cabin_start value="#DEVICE,82,2,3"/>
+          <keypad_82_2_btn_2_sb_fwd_guest_cabin_continue value="#DEVICE,82,2,5"/>
+          <keypad_82_2_btn_2_sb_fwd_guest_cabin_stop value="#DEVICE,82,2,4"/>
+          <keypad_82_2_btn_4_sb_fwd_guest_cabin value="#DEVICE,82,4,3&#13;&#10;#DEVICE,82,4,4"/>
+          <keypad_82_2_btn_4_sb_fwd_guest_cabin_start value="#DEVICE,82,4,3"/>
+          <keypad_82_2_btn_4_sb_fwd_guest_cabin_continue value="#DEVICE,82,4,5"/>
+          <keypad_82_2_btn_4_sb_fwd_guest_cabin_stop value="#DEVICE,82,4,4"/>
+          <keypad_94_1_btn_1_ps_fwd_guest_cabin value="#DEVICE,94,1,3&#13;&#10;#DEVICE,94,1,4"/>
+          <keypad_94_1_btn_1_ps_fwd_guest_cabin_start value="#DEVICE,94,1,3"/>
+          <keypad_94_1_btn_1_ps_fwd_guest_cabin_continue value="#DEVICE,94,1,5"/>
+          <keypad_94_1_btn_1_ps_fwd_guest_cabin_stop value="#DEVICE,94,1,4"/>
+          <keypad_94_1_btn_3_ps_fwd_guest_cabin value="#DEVICE,94,3,3&#13;&#10;#DEVICE,94,3,4"/>
+          <keypad_94_1_btn_3_ps_fwd_guest_cabin_start value="#DEVICE,94,3,3"/>
+          <keypad_94_1_btn_3_ps_fwd_guest_cabin_continue value="#DEVICE,94,3,5"/>
+          <keypad_94_1_btn_3_ps_fwd_guest_cabin_stop value="#DEVICE,94,3,4"/>
+          <keypad_94_1_btn_5_ps_fwd_guest_cabin value="#DEVICE,94,5,3&#13;&#10;#DEVICE,94,5,4"/>
+          <keypad_94_1_btn_5_ps_fwd_guest_cabin_start value="#DEVICE,94,5,3"/>
+          <keypad_94_1_btn_5_ps_fwd_guest_cabin_continue value="#DEVICE,94,5,5"/>
+          <keypad_94_1_btn_5_ps_fwd_guest_cabin_stop value="#DEVICE,94,5,4"/>
+          <keypad_99_2_btn_2_ps_fwd_guest_cabin value="#DEVICE,99,2,3&#13;&#10;#DEVICE,99,2,4"/>
+          <keypad_99_2_btn_2_ps_fwd_guest_cabin_start value="#DEVICE,99,2,3"/>
+          <keypad_99_2_btn_2_ps_fwd_guest_cabin_continue value="#DEVICE,99,2,5"/>
+          <keypad_99_2_btn_2_ps_fwd_guest_cabin_stop value="#DEVICE,99,2,4"/>
+          <keypad_99_2_btn_4_ps_fwd_guest_cabin value="#DEVICE,99,4,3&#13;&#10;#DEVICE,99,4,4"/>
+          <keypad_99_2_btn_4_ps_fwd_guest_cabin_start value="#DEVICE,99,4,3"/>
+          <keypad_99_2_btn_4_ps_fwd_guest_cabin_continue value="#DEVICE,99,4,5"/>
+          <keypad_99_2_btn_4_ps_fwd_guest_cabin_stop value="#DEVICE,99,4,4"/>
+          <keypad_73_1_btn_2_beauty_salon value="#DEVICE,73,2,3&#13;&#10;#DEVICE,73,2,4"/>
+          <keypad_73_1_btn_2_beauty_salon_start value="#DEVICE,73,2,3"/>
+          <keypad_73_1_btn_2_beauty_salon_continue value="#DEVICE,73,2,5"/>
+          <keypad_73_1_btn_2_beauty_salon_stop value="#DEVICE,73,2,4"/>
+          <keypad_73_1_btn_4_beauty_salon value="#DEVICE,73,4,3&#13;&#10;#DEVICE,73,4,4"/>
+          <keypad_73_1_btn_4_beauty_salon_start value="#DEVICE,73,4,3"/>
+          <keypad_73_1_btn_4_beauty_salon_continue value="#DEVICE,73,4,5"/>
+          <keypad_73_1_btn_4_beauty_salon_stop value="#DEVICE,73,4,4"/>
+          <keypad_56_1_btn_1_aft_guest_area_wet_lounge value="#DEVICE,56,1,3&#13;&#10;#DEVICE,56,1,4"/>
+          <keypad_56_1_btn_1_aft_guest_area_wet_lounge_start value="#DEVICE,56,1,3"/>
+          <keypad_56_1_btn_1_aft_guest_area_wet_lounge_continue value="#DEVICE,56,1,5"/>
+          <keypad_56_1_btn_1_aft_guest_area_wet_lounge_stop value="#DEVICE,56,1,4"/>
+          <keypad_56_1_btn_3_aft_guest_area_wet_lounge value="#DEVICE,56,3,3&#13;&#10;#DEVICE,56,3,4"/>
+          <keypad_56_1_btn_3_aft_guest_area_wet_lounge_start value="#DEVICE,56,3,3"/>
+          <keypad_56_1_btn_3_aft_guest_area_wet_lounge_continue value="#DEVICE,56,3,5"/>
+          <keypad_56_1_btn_3_aft_guest_area_wet_lounge_stop value="#DEVICE,56,3,4"/>
+          <keypad_56_1_btn_5_aft_guest_area_wet_lounge value="#DEVICE,56,5,3&#13;&#10;#DEVICE,56,5,4"/>
+          <keypad_56_1_btn_5_aft_guest_area_wet_lounge_start value="#DEVICE,56,5,3"/>
+          <keypad_56_1_btn_5_aft_guest_area_wet_lounge_continue value="#DEVICE,56,5,5"/>
+          <keypad_56_1_btn_5_aft_guest_area_wet_lounge_stop value="#DEVICE,56,5,4"/>
+          <keypad_101_1_btn_1_main_deck_lounge value="#DEVICE,101,1,3&#13;&#10;#DEVICE,101,1,4"/>
+          <keypad_101_1_btn_1_main_deck_lounge_start value="#DEVICE,101,1,3"/>
+          <keypad_101_1_btn_1_main_deck_lounge_continue value="#DEVICE,101,1,5"/>
+          <keypad_101_1_btn_1_main_deck_lounge_stop value="#DEVICE,101,1,4"/>
+          <keypad_101_1_btn_2_main_deck_lounge value="#DEVICE,101,2,3&#13;&#10;#DEVICE,101,2,4"/>
+          <keypad_101_1_btn_2_main_deck_lounge_start value="#DEVICE,101,2,3"/>
+          <keypad_101_1_btn_2_main_deck_lounge_continue value="#DEVICE,101,2,5"/>
+          <keypad_101_1_btn_2_main_deck_lounge_stop value="#DEVICE,101,2,4"/>
+          <keypad_101_1_btn_3_main_deck_lounge value="#DEVICE,101,3,3&#13;&#10;#DEVICE,101,3,4"/>
+          <keypad_101_1_btn_3_main_deck_lounge_start value="#DEVICE,101,3,3"/>
+          <keypad_101_1_btn_3_main_deck_lounge_continue value="#DEVICE,101,3,5"/>
+          <keypad_101_1_btn_3_main_deck_lounge_stop value="#DEVICE,101,3,4"/>
+          <keypad_107_1_btn_1_main_deck_staff_cabin value="#DEVICE,107,1,3&#13;&#10;#DEVICE,107,1,4"/>
+          <keypad_107_1_btn_1_main_deck_staff_cabin_start value="#DEVICE,107,1,3"/>
+          <keypad_107_1_btn_1_main_deck_staff_cabin_continue value="#DEVICE,107,1,5"/>
+          <keypad_107_1_btn_1_main_deck_staff_cabin_stop value="#DEVICE,107,1,4"/>
+          <keypad_107_1_btn_3_main_deck_staff_cabin value="#DEVICE,107,3,3&#13;&#10;#DEVICE,107,3,4"/>
+          <keypad_107_1_btn_3_main_deck_staff_cabin_start value="#DEVICE,107,3,3"/>
+          <keypad_107_1_btn_3_main_deck_staff_cabin_continue value="#DEVICE,107,3,5"/>
+          <keypad_107_1_btn_3_main_deck_staff_cabin_stop value="#DEVICE,107,3,4"/>
+          <keypad_107_1_btn_5_main_deck_staff_cabin value="#DEVICE,107,5,3&#13;&#10;#DEVICE,107,5,4"/>
+          <keypad_107_1_btn_5_main_deck_staff_cabin_start value="#DEVICE,107,5,3"/>
+          <keypad_107_1_btn_5_main_deck_staff_cabin_continue value="#DEVICE,107,5,5"/>
+          <keypad_107_1_btn_5_main_deck_staff_cabin_stop value="#DEVICE,107,5,4"/>
+          <keypad_110_1_btn_1_guest5 value="#DEVICE,110,1,3&#13;&#10;#DEVICE,110,1,4"/>
+          <keypad_110_1_btn_1_guest5_start value="#DEVICE,110,1,3"/>
+          <keypad_110_1_btn_1_guest5_continue value="#DEVICE,110,1,5"/>
+          <keypad_110_1_btn_1_guest5_stop value="#DEVICE,110,1,4"/>
+          <keypad_110_1_btn_3_guest5 value="#DEVICE,110,3,3&#13;&#10;#DEVICE,110,3,4"/>
+          <keypad_110_1_btn_3_guest5_start value="#DEVICE,110,3,3"/>
+          <keypad_110_1_btn_3_guest5_continue value="#DEVICE,110,3,5"/>
+          <keypad_110_1_btn_3_guest5_stop value="#DEVICE,110,3,4"/>
+          <keypad_110_1_btn_5_guest5 value="#DEVICE,110,5,3&#13;&#10;#DEVICE,110,5,4"/>
+          <keypad_110_1_btn_5_guest5_start value="#DEVICE,110,5,3"/>
+          <keypad_110_1_btn_5_guest5_continue value="#DEVICE,110,5,5"/>
+          <keypad_110_1_btn_5_guest5_stop value="#DEVICE,110,5,4"/>
+          <keypad_114_2_btn_2_guest5 value="#DEVICE,114,2,3&#13;&#10;#DEVICE,114,2,4"/>
+          <keypad_114_2_btn_2_guest5_start value="#DEVICE,114,2,3"/>
+          <keypad_114_2_btn_2_guest5_continue value="#DEVICE,114,2,5"/>
+          <keypad_114_2_btn_2_guest5_stop value="#DEVICE,114,2,4"/>
+          <keypad_114_2_btn_4_guest5 value="#DEVICE,114,4,3&#13;&#10;#DEVICE,114,4,4"/>
+          <keypad_114_2_btn_4_guest5_start value="#DEVICE,114,4,3"/>
+          <keypad_114_2_btn_4_guest5_continue value="#DEVICE,114,4,5"/>
+          <keypad_114_2_btn_4_guest5_stop value="#DEVICE,114,4,4"/>
+          <keypad_115_1_btn_1_guest6 value="#DEVICE,115,1,3&#13;&#10;#DEVICE,115,1,4"/>
+          <keypad_115_1_btn_1_guest6_start value="#DEVICE,115,1,3"/>
+          <keypad_115_1_btn_1_guest6_continue value="#DEVICE,115,1,5"/>
+          <keypad_115_1_btn_1_guest6_stop value="#DEVICE,115,1,4"/>
+          <keypad_115_1_btn_3_guest6 value="#DEVICE,115,3,3&#13;&#10;#DEVICE,115,3,4"/>
+          <keypad_115_1_btn_3_guest6_start value="#DEVICE,115,3,3"/>
+          <keypad_115_1_btn_3_guest6_continue value="#DEVICE,115,3,5"/>
+          <keypad_115_1_btn_3_guest6_stop value="#DEVICE,115,3,4"/>
+          <keypad_115_1_btn_5_guest6 value="#DEVICE,115,5,3&#13;&#10;#DEVICE,115,5,4"/>
+          <keypad_115_1_btn_5_guest6_start value="#DEVICE,115,5,3"/>
+          <keypad_115_1_btn_5_guest6_continue value="#DEVICE,115,5,5"/>
+          <keypad_115_1_btn_5_guest6_stop value="#DEVICE,115,5,4"/>
+          <keypad_119_2_btn_2_guest6 value="#DEVICE,119,2,3&#13;&#10;#DEVICE,119,2,4"/>
+          <keypad_119_2_btn_2_guest6_start value="#DEVICE,119,2,3"/>
+          <keypad_119_2_btn_2_guest6_continue value="#DEVICE,119,2,5"/>
+          <keypad_119_2_btn_2_guest6_stop value="#DEVICE,119,2,4"/>
+          <keypad_119_2_btn_4_guest6 value="#DEVICE,119,4,3&#13;&#10;#DEVICE,119,4,4"/>
+          <keypad_119_2_btn_4_guest6_start value="#DEVICE,119,4,3"/>
+          <keypad_119_2_btn_4_guest6_continue value="#DEVICE,119,4,5"/>
+          <keypad_119_2_btn_4_guest6_stop value="#DEVICE,119,4,4"/>
+          <keypad_153_1_btn_2_gym value="#DEVICE,153,2,3&#13;&#10;#DEVICE,153,2,4"/>
+          <keypad_153_1_btn_2_gym_start value="#DEVICE,153,2,3"/>
+          <keypad_153_1_btn_2_gym_continue value="#DEVICE,153,2,5"/>
+          <keypad_153_1_btn_2_gym_stop value="#DEVICE,153,2,4"/>
+          <keypad_153_1_btn_4_gym value="#DEVICE,153,4,3&#13;&#10;#DEVICE,153,4,4"/>
+          <keypad_153_1_btn_4_gym_start value="#DEVICE,153,4,3"/>
+          <keypad_153_1_btn_4_gym_continue value="#DEVICE,153,4,5"/>
+          <keypad_153_1_btn_4_gym_stop value="#DEVICE,153,4,4"/>
+          <keypad_157_1_btn_2_captain value="#DEVICE,157,2,3&#13;&#10;#DEVICE,157,2,4"/>
+          <keypad_157_1_btn_2_captain_start value="#DEVICE,157,2,3"/>
+          <keypad_157_1_btn_2_captain_continue value="#DEVICE,157,2,5"/>
+          <keypad_157_1_btn_2_captain_stop value="#DEVICE,157,2,4"/>
+          <keypad_157_1_btn_4_captain value="#DEVICE,157,4,3&#13;&#10;#DEVICE,157,4,4"/>
+          <keypad_157_1_btn_4_captain_start value="#DEVICE,157,4,3"/>
+          <keypad_157_1_btn_4_captain_continue value="#DEVICE,157,4,5"/>
+          <keypad_157_1_btn_4_captain_stop value="#DEVICE,157,4,4"/>
+          <keypad_160_1_btn_1_wheelhouse value="#DEVICE,160,1,3&#13;&#10;#DEVICE,160,1,4"/>
+          <keypad_160_1_btn_1_wheelhouse_start value="#DEVICE,160,1,3"/>
+          <keypad_160_1_btn_1_wheelhouse_continue value="#DEVICE,160,1,5"/>
+          <keypad_160_1_btn_1_wheelhouse_stop value="#DEVICE,160,1,4"/>
+          <keypad_160_1_btn_3_wheelhouse value="#DEVICE,160,3,3&#13;&#10;#DEVICE,160,3,4"/>
+          <keypad_160_1_btn_3_wheelhouse_start value="#DEVICE,160,3,3"/>
+          <keypad_160_1_btn_3_wheelhouse_continue value="#DEVICE,160,3,5"/>
+          <keypad_160_1_btn_3_wheelhouse_stop value="#DEVICE,160,3,4"/>
+          <keypad_160_1_btn_5_wheelhouse value="#DEVICE,160,5,3&#13;&#10;#DEVICE,160,5,4"/>
+          <keypad_160_1_btn_5_wheelhouse_start value="#DEVICE,160,5,3"/>
+          <keypad_160_1_btn_5_wheelhouse_continue value="#DEVICE,160,5,5"/>
+          <keypad_160_1_btn_5_wheelhouse_stop value="#DEVICE,160,5,4"/>
+          <keypad_166_1_btn_2_ships_office value="#DEVICE,166,2,3&#13;&#10;#DEVICE,166,2,4"/>
+          <keypad_166_1_btn_2_ships_office_start value="#DEVICE,166,2,3"/>
+          <keypad_166_1_btn_2_ships_office_continue value="#DEVICE,166,2,5"/>
+          <keypad_166_1_btn_2_ships_office_stop value="#DEVICE,166,2,4"/>
+          <keypad_166_1_btn_4_ships_office value="#DEVICE,166,4,3&#13;&#10;#DEVICE,166,4,4"/>
+          <keypad_166_1_btn_4_ships_office_start value="#DEVICE,166,4,3"/>
+          <keypad_166_1_btn_4_ships_office_continue value="#DEVICE,166,4,5"/>
+          <keypad_166_1_btn_4_ships_office_stop value="#DEVICE,166,4,4"/>
+          <keypad_651_1_btn_1_sb_vip_cabin_7 value="#DEVICE,651,1,3&#13;&#10;#DEVICE,651,1,4"/>
+          <keypad_651_1_btn_1_sb_vip_cabin_7_start value="#DEVICE,651,1,3"/>
+          <keypad_651_1_btn_1_sb_vip_cabin_7_continue value="#DEVICE,651,1,5"/>
+          <keypad_651_1_btn_1_sb_vip_cabin_7_stop value="#DEVICE,651,1,4"/>
+          <keypad_651_1_btn_3_sb_vip_cabin_7 value="#DEVICE,651,3,3&#13;&#10;#DEVICE,651,3,4"/>
+          <keypad_651_1_btn_3_sb_vip_cabin_7_start value="#DEVICE,651,3,3"/>
+          <keypad_651_1_btn_3_sb_vip_cabin_7_continue value="#DEVICE,651,3,5"/>
+          <keypad_651_1_btn_3_sb_vip_cabin_7_stop value="#DEVICE,651,3,4"/>
+          <keypad_651_1_btn_5_sb_vip_cabin_7 value="#DEVICE,651,5,3&#13;&#10;#DEVICE,651,5,4"/>
+          <keypad_651_1_btn_5_sb_vip_cabin_7_start value="#DEVICE,651,5,3"/>
+          <keypad_651_1_btn_5_sb_vip_cabin_7_continue value="#DEVICE,651,5,5"/>
+          <keypad_651_1_btn_5_sb_vip_cabin_7_stop value="#DEVICE,651,5,4"/>
+          <keypad_139_2_btn_2_sb_vip_cabin_7 value="#DEVICE,139,2,3&#13;&#10;#DEVICE,139,2,4"/>
+          <keypad_139_2_btn_2_sb_vip_cabin_7_start value="#DEVICE,139,2,3"/>
+          <keypad_139_2_btn_2_sb_vip_cabin_7_continue value="#DEVICE,139,2,5"/>
+          <keypad_139_2_btn_2_sb_vip_cabin_7_stop value="#DEVICE,139,2,4"/>
+          <keypad_139_2_btn_4_sb_vip_cabin_7 value="#DEVICE,139,4,3&#13;&#10;#DEVICE,139,4,4"/>
+          <keypad_139_2_btn_4_sb_vip_cabin_7_start value="#DEVICE,139,4,3"/>
+          <keypad_139_2_btn_4_sb_vip_cabin_7_continue value="#DEVICE,139,4,5"/>
+          <keypad_139_2_btn_4_sb_vip_cabin_7_stop value="#DEVICE,139,4,4"/>
+          <keypad_656_1_btn_1_ps_vip_cabin_8 value="#DEVICE,656,1,3&#13;&#10;#DEVICE,656,1,4"/>
+          <keypad_656_1_btn_1_ps_vip_cabin_8_start value="#DEVICE,656,1,3"/>
+          <keypad_656_1_btn_1_ps_vip_cabin_8_continue value="#DEVICE,656,1,5"/>
+          <keypad_656_1_btn_1_ps_vip_cabin_8_stop value="#DEVICE,656,1,4"/>
+          <keypad_656_1_btn_3_ps_vip_cabin_8 value="#DEVICE,656,3,3&#13;&#10;#DEVICE,656,3,4"/>
+          <keypad_656_1_btn_3_ps_vip_cabin_8_start value="#DEVICE,656,3,3"/>
+          <keypad_656_1_btn_3_ps_vip_cabin_8_continue value="#DEVICE,656,3,5"/>
+          <keypad_656_1_btn_3_ps_vip_cabin_8_stop value="#DEVICE,656,3,4"/>
+          <keypad_656_1_btn_5_ps_vip_cabin_8 value="#DEVICE,656,5,3&#13;&#10;#DEVICE,656,5,4"/>
+          <keypad_656_1_btn_5_ps_vip_cabin_8_start value="#DEVICE,656,5,3"/>
+          <keypad_656_1_btn_5_ps_vip_cabin_8_continue value="#DEVICE,656,5,5"/>
+          <keypad_656_1_btn_5_ps_vip_cabin_8_stop value="#DEVICE,656,5,4"/>
+          <keypad_128_2_btn_2_ps_vip_cabin_8 value="#DEVICE,128,2,3&#13;&#10;#DEVICE,128,2,4"/>
+          <keypad_128_2_btn_2_ps_vip_cabin_8_start value="#DEVICE,128,2,3"/>
+          <keypad_128_2_btn_2_ps_vip_cabin_8_continue value="#DEVICE,128,2,5"/>
+          <keypad_128_2_btn_2_ps_vip_cabin_8_stop value="#DEVICE,128,2,4"/>
+          <keypad_128_2_btn_4_ps_vip_cabin_8 value="#DEVICE,128,4,3&#13;&#10;#DEVICE,128,4,4"/>
+          <keypad_128_2_btn_4_ps_vip_cabin_8_start value="#DEVICE,128,4,3"/>
+          <keypad_128_2_btn_4_ps_vip_cabin_8_continue value="#DEVICE,128,4,5"/>
+          <keypad_128_2_btn_4_ps_vip_cabin_8_stop value="#DEVICE,128,4,4"/>
+          <keypad_148_1_btn_1_owners_suite value="#DEVICE,148,1,3&#13;&#10;#DEVICE,148,1,4"/>
+          <keypad_148_1_btn_1_owners_suite_start value="#DEVICE,148,1,3"/>
+          <keypad_148_1_btn_1_owners_suite_continue value="#DEVICE,148,1,5"/>
+          <keypad_148_1_btn_1_owners_suite_stop value="#DEVICE,148,1,4"/>
+          <keypad_148_1_btn_3_owners_suite value="#DEVICE,148,3,3&#13;&#10;#DEVICE,148,3,4"/>
+          <keypad_148_1_btn_3_owners_suite_start value="#DEVICE,148,3,3"/>
+          <keypad_148_1_btn_3_owners_suite_continue value="#DEVICE,148,3,5"/>
+          <keypad_148_1_btn_3_owners_suite_stop value="#DEVICE,148,3,4"/>
+          <keypad_148_1_btn_5_owners_suite value="#DEVICE,148,5,3&#13;&#10;#DEVICE,148,5,4"/>
+          <keypad_148_1_btn_5_owners_suite_start value="#DEVICE,148,5,3"/>
+          <keypad_148_1_btn_5_owners_suite_continue value="#DEVICE,148,5,5"/>
+          <keypad_148_1_btn_5_owners_suite_stop value="#DEVICE,148,5,4"/>
+          <keypad_120_1_btn_1_owners_deck_lounge value="#DEVICE,120,1,3&#13;&#10;#DEVICE,120,1,4"/>
+          <keypad_120_1_btn_1_owners_deck_lounge_start value="#DEVICE,120,1,3"/>
+          <keypad_120_1_btn_1_owners_deck_lounge_continue value="#DEVICE,120,1,5"/>
+          <keypad_120_1_btn_1_owners_deck_lounge_stop value="#DEVICE,120,1,4"/>
+          <keypad_120_1_btn_2_owners_deck_lounge value="#DEVICE,120,2,3&#13;&#10;#DEVICE,120,2,4"/>
+          <keypad_120_1_btn_2_owners_deck_lounge_start value="#DEVICE,120,2,3"/>
+          <keypad_120_1_btn_2_owners_deck_lounge_continue value="#DEVICE,120,2,5"/>
+          <keypad_120_1_btn_2_owners_deck_lounge_stop value="#DEVICE,120,2,4"/>
+          <keypad_120_1_btn_3_owners_deck_lounge value="#DEVICE,120,3,3&#13;&#10;#DEVICE,120,3,4"/>
+          <keypad_120_1_btn_3_owners_deck_lounge_start value="#DEVICE,120,3,3"/>
+          <keypad_120_1_btn_3_owners_deck_lounge_continue value="#DEVICE,120,3,5"/>
+          <keypad_120_1_btn_3_owners_deck_lounge_stop value="#DEVICE,120,3,4"/>
+          <keypad_143_1_btn_2_her_bathroom value="#DEVICE,143,2,3&#13;&#10;#DEVICE,143,2,4"/>
+          <keypad_143_1_btn_2_her_bathroom_start value="#DEVICE,143,2,3"/>
+          <keypad_143_1_btn_2_her_bathroom_continue value="#DEVICE,143,2,5"/>
+          <keypad_143_1_btn_2_her_bathroom_stop value="#DEVICE,143,2,4"/>
+          <keypad_143_1_btn_4_her_bathroom value="#DEVICE,143,4,3&#13;&#10;#DEVICE,143,4,4"/>
+          <keypad_143_1_btn_4_her_bathroom_start value="#DEVICE,143,4,3"/>
+          <keypad_143_1_btn_4_her_bathroom_continue value="#DEVICE,143,4,5"/>
+          <keypad_143_1_btn_4_her_bathroom_stop value="#DEVICE,143,4,4"/>
+          <keypad_142_2_btn_1_her_bathroom value="#DEVICE,142,1,3&#13;&#10;#DEVICE,142,1,4"/>
+          <keypad_142_2_btn_1_her_bathroom_start value="#DEVICE,142,1,3"/>
+          <keypad_142_2_btn_1_her_bathroom_continue value="#DEVICE,142,1,5"/>
+          <keypad_142_2_btn_1_her_bathroom_stop value="#DEVICE,142,1,4"/>
+          <keypad_142_2_btn_2_her_bathroom value="#DEVICE,142,2,3&#13;&#10;#DEVICE,142,2,4"/>
+          <keypad_142_2_btn_2_her_bathroom_start value="#DEVICE,142,2,3"/>
+          <keypad_142_2_btn_2_her_bathroom_continue value="#DEVICE,142,2,5"/>
+          <keypad_142_2_btn_2_her_bathroom_stop value="#DEVICE,142,2,4"/>
+          <keypad_142_2_btn_3_her_bathroom value="#DEVICE,142,3,3&#13;&#10;#DEVICE,142,3,4"/>
+          <keypad_142_2_btn_3_her_bathroom_start value="#DEVICE,142,3,3"/>
+          <keypad_142_2_btn_3_her_bathroom_continue value="#DEVICE,142,3,5"/>
+          <keypad_142_2_btn_3_her_bathroom_stop value="#DEVICE,142,3,4"/>
+          <keypad_142_2_btn_4_her_bathroom value="#DEVICE,142,4,3&#13;&#10;#DEVICE,142,4,4"/>
+          <keypad_142_2_btn_4_her_bathroom_start value="#DEVICE,142,4,3"/>
+          <keypad_142_2_btn_4_her_bathroom_continue value="#DEVICE,142,4,5"/>
+          <keypad_142_2_btn_4_her_bathroom_stop value="#DEVICE,142,4,4"/>
+          <keypad_146_1_btn_2_his_bathroom value="#DEVICE,146,2,3&#13;&#10;#DEVICE,146,2,4"/>
+          <keypad_146_1_btn_2_his_bathroom_start value="#DEVICE,146,2,3"/>
+          <keypad_146_1_btn_2_his_bathroom_continue value="#DEVICE,146,2,5"/>
+          <keypad_146_1_btn_2_his_bathroom_stop value="#DEVICE,146,2,4"/>
+          <keypad_146_1_btn_4_his_bathroom value="#DEVICE,146,4,3&#13;&#10;#DEVICE,146,4,4"/>
+          <keypad_146_1_btn_4_his_bathroom_start value="#DEVICE,146,4,3"/>
+          <keypad_146_1_btn_4_his_bathroom_continue value="#DEVICE,146,4,5"/>
+          <keypad_146_1_btn_4_his_bathroom_stop value="#DEVICE,146,4,4"/>
+          <keypad_145_2_btn_1_his_bathroom value="#DEVICE,145,1,3&#13;&#10;#DEVICE,145,1,4"/>
+          <keypad_145_2_btn_1_his_bathroom_start value="#DEVICE,145,1,3"/>
+          <keypad_145_2_btn_1_his_bathroom_continue value="#DEVICE,145,1,5"/>
+          <keypad_145_2_btn_1_his_bathroom_stop value="#DEVICE,145,1,4"/>
+          <keypad_145_2_btn_2_his_bathroom value="#DEVICE,145,2,3&#13;&#10;#DEVICE,145,2,4"/>
+          <keypad_145_2_btn_2_his_bathroom_start value="#DEVICE,145,2,3"/>
+          <keypad_145_2_btn_2_his_bathroom_continue value="#DEVICE,145,2,5"/>
+          <keypad_145_2_btn_2_his_bathroom_stop value="#DEVICE,145,2,4"/>
+          <keypad_145_2_btn_3_his_bathroom value="#DEVICE,145,3,3&#13;&#10;#DEVICE,145,3,4"/>
+          <keypad_145_2_btn_3_his_bathroom_start value="#DEVICE,145,3,3"/>
+          <keypad_145_2_btn_3_his_bathroom_continue value="#DEVICE,145,3,5"/>
+          <keypad_145_2_btn_3_his_bathroom_stop value="#DEVICE,145,3,4"/>
+          <keypad_145_2_btn_4_his_bathroom value="#DEVICE,145,4,3&#13;&#10;#DEVICE,145,4,4"/>
+          <keypad_145_2_btn_4_his_bathroom_start value="#DEVICE,145,4,3"/>
+          <keypad_145_2_btn_4_his_bathroom_continue value="#DEVICE,145,4,5"/>
+          <keypad_145_2_btn_4_his_bathroom_stop value="#DEVICE,145,4,4"/>
+          <!-- 
+                  feedback for button status 
+            -->
+          <feedback_1_regex value="~DEVICE,76,81,9,([0-1])"/>
+          <feedback_1_regex_detail value="keypad_76_1_btn_1_sb_aft_guest_cabin"/>
+          <feedback_2_regex value="~DEVICE,76,83,9,([0-1])"/>
+          <feedback_2_regex_detail value="keypad_76_1_btn_3_sb_aft_guest_cabin"/>
+          <feedback_3_regex value="~DEVICE,76,85,9,([0-1])"/>
+          <feedback_3_regex_detail value="keypad_76_1_btn_5_sb_aft_guest_cabin"/>
+          <feedback_4_regex value="~DEVICE,81,82,9,([0-1])"/>
+          <feedback_4_regex_detail value="keypad_81_2_btn_2_sb_aft_guest_cabin"/>
+          <feedback_5_regex value="~DEVICE,81,84,9,([0-1])"/>
+          <feedback_5_regex_detail value="keypad_81_2_btn_4_sb_aft_guest_cabin"/>
+          <feedback_6_regex value="~DEVICE,92,81,9,([0-1])"/>
+          <feedback_6_regex_detail value="keypad_92_1_btn_1_ps_aft_guest_cabin"/>
+          <feedback_7_regex value="~DEVICE,92,83,9,([0-1])"/>
+          <feedback_7_regex_detail value="keypad_92_1_btn_3_ps_aft_guest_cabin"/>
+          <feedback_8_regex value="~DEVICE,92,85,9,([0-1])"/>
+          <feedback_8_regex_detail value="keypad_92_1_btn_5_ps_aft_guest_cabin"/>
+          <feedback_9_regex value="~DEVICE,93,82,9,([0-1])"/>
+          <feedback_9_regex_detail value="keypad_93_2_btn_2_ps_aft_guest_cabin"/>
+          <feedback_10_regex value="~DEVICE,93,84,9,([0-1])"/>
+          <feedback_10_regex_detail value="keypad_93_2_btn_4_ps_aft_guest_cabin"/>
+          <feedback_11_regex value="~DEVICE,83,81,9,([0-1])"/>
+          <feedback_11_regex_detail value="keypad_83_1_btn_1_sb_fwd_guest_cabin"/>
+          <feedback_12_regex value="~DEVICE,83,83,9,([0-1])"/>
+          <feedback_12_regex_detail value="keypad_83_1_btn_3_sb_fwd_guest_cabin"/>
+          <feedback_13_regex value="~DEVICE,83,85,9,([0-1])"/>
+          <feedback_13_regex_detail value="keypad_83_1_btn_5_sb_fwd_guest_cabin"/>
+          <feedback_14_regex value="~DEVICE,82,82,9,([0-1])"/>
+          <feedback_14_regex_detail value="keypad_82_2_btn_2_sb_fwd_guest_cabin"/>
+          <feedback_15_regex value="~DEVICE,82,84,9,([0-1])"/>
+          <feedback_15_regex_detail value="keypad_82_2_btn_4_sb_fwd_guest_cabin"/>
+          <feedback_16_regex value="~DEVICE,94,81,9,([0-1])"/>
+          <feedback_16_regex_detail value="keypad_94_1_btn_1_ps_fwd_guest_cabin"/>
+          <feedback_17_regex value="~DEVICE,94,83,9,([0-1])"/>
+          <feedback_17_regex_detail value="keypad_94_1_btn_3_ps_fwd_guest_cabin"/>
+          <feedback_18_regex value="~DEVICE,94,85,9,([0-1])"/>
+          <feedback_18_regex_detail value="keypad_94_1_btn_5_ps_fwd_guest_cabin"/>
+          <feedback_19_regex value="~DEVICE,99,82,9,([0-1])"/>
+          <feedback_19_regex_detail value="keypad_99_2_btn_2_ps_fwd_guest_cabin"/>
+          <feedback_20_regex value="~DEVICE,99,84,9,([0-1])"/>
+          <feedback_20_regex_detail value="keypad_99_2_btn_4_ps_fwd_guest_cabin"/>
+          <feedback_21_regex value="~DEVICE,73,82,9,([0-1])"/>
+          <feedback_21_regex_detail value="keypad_73_1_btn_2_beauty_salon"/>
+          <feedback_22_regex value="~DEVICE,73,84,9,([0-1])"/>
+          <feedback_22_regex_detail value="keypad_73_1_btn_4_beauty_salon"/>
+          <feedback_23_regex value="~DEVICE,56,81,9,([0-1])"/>
+          <feedback_23_regex_detail value="keypad_56_1_btn_1_aft_guest_area_wet_lounge"/>
+          <feedback_24_regex value="~DEVICE,56,83,9,([0-1])"/>
+          <feedback_24_regex_detail value="keypad_56_1_btn_3_aft_guest_area_wet_lounge"/>
+          <feedback_25_regex value="~DEVICE,56,85,9,([0-1])"/>
+          <feedback_25_regex_detail value="keypad_56_1_btn_5_aft_guest_area_wet_lounge"/>
+          <feedback_26_regex value="~DEVICE,101,81,9,([0-1])"/>
+          <feedback_26_regex_detail value="keypad_101_1_btn_1_main_deck_lounge"/>
+          <feedback_27_regex value="~DEVICE,101,82,9,([0-1])"/>
+          <feedback_27_regex_detail value="keypad_101_1_btn_2_main_deck_lounge"/>
+          <feedback_28_regex value="~DEVICE,101,83,9,([0-1])"/>
+          <feedback_28_regex_detail value="keypad_101_1_btn_3_main_deck_lounge"/>
+          <feedback_29_regex value="~DEVICE,107,81,9,([0-1])"/>
+          <feedback_29_regex_detail value="keypad_107_1_btn_1_main_deck_staff_cabin"/>
+          <feedback_30_regex value="~DEVICE,107,83,9,([0-1])"/>
+          <feedback_30_regex_detail value="keypad_107_1_btn_3_main_deck_staff_cabin"/>
+          <feedback_31_regex value="~DEVICE,107,85,9,([0-1])"/>
+          <feedback_31_regex_detail value="keypad_107_1_btn_5_main_deck_staff_cabin"/>
+          <feedback_32_regex value="~DEVICE,110,81,9,([0-1])"/>
+          <feedback_32_regex_detail value="keypad_110_1_btn_1_guest5"/>
+          <feedback_33_regex value="~DEVICE,110,83,9,([0-1])"/>
+          <feedback_33_regex_detail value="keypad_110_1_btn_3_guest5"/>
+          <feedback_34_regex value="~DEVICE,110,85,9,([0-1])"/>
+          <feedback_34_regex_detail value="keypad_110_1_btn_5_guest5"/>
+          <feedback_35_regex value="~DEVICE,114,82,9,([0-1])"/>
+          <feedback_35_regex_detail value="keypad_114_2_btn_2_guest5"/>
+          <feedback_36_regex value="~DEVICE,114,84,9,([0-1])"/>
+          <feedback_36_regex_detail value="keypad_114_2_btn_4_guest5"/>
+          <feedback_37_regex value="~DEVICE,115,81,9,([0-1])"/>
+          <feedback_37_regex_detail value="keypad_115_1_btn_1_guest6"/>
+          <feedback_38_regex value="~DEVICE,115,83,9,([0-1])"/>
+          <feedback_38_regex_detail value="keypad_115_1_btn_3_guest6"/>
+          <feedback_39_regex value="~DEVICE,115,85,9,([0-1])"/>
+          <feedback_39_regex_detail value="keypad_115_1_btn_5_guest6"/>
+          <feedback_40_regex value="~DEVICE,119,82,9,([0-1])"/>
+          <feedback_40_regex_detail value="keypad_119_2_btn_2_guest6"/>
+          <feedback_41_regex value="~DEVICE,119,84,9,([0-1])"/>
+          <feedback_41_regex_detail value="keypad_119_2_btn_4_guest6"/>
+          <feedback_42_regex value="~DEVICE,153,82,9,([0-1])"/>
+          <feedback_42_regex_detail value="keypad_153_1_btn_2_gym"/>
+          <feedback_43_regex value="~DEVICE,153,84,9,([0-1])"/>
+          <feedback_43_regex_detail value="keypad_153_1_btn_4_gym"/>
+          <feedback_44_regex value="~DEVICE,157,82,9,([0-1])"/>
+          <feedback_44_regex_detail value="keypad_157_1_btn_2_captain"/>
+          <feedback_45_regex value="~DEVICE,157,84,9,([0-1])"/>
+          <feedback_45_regex_detail value="keypad_157_1_btn_4_captain"/>
+          <feedback_46_regex value="~DEVICE,160,81,9,([0-1])"/>
+          <feedback_46_regex_detail value="keypad_160_1_btn_1_wheelhouse"/>
+          <feedback_47_regex value="~DEVICE,160,83,9,([0-1])"/>
+          <feedback_47_regex_detail value="keypad_160_1_btn_3_wheelhouse"/>
+          <feedback_48_regex value="~DEVICE,160,85,9,([0-1])"/>
+          <feedback_48_regex_detail value="keypad_160_1_btn_5_wheelhouse"/>
+          <feedback_49_regex value="~DEVICE,166,82,9,([0-1])"/>
+          <feedback_49_regex_detail value="keypad_166_1_btn_2_ships_office"/>
+          <feedback_50_regex value="~DEVICE,166,84,9,([0-1])"/>
+          <feedback_50_regex_detail value="keypad_166_1_btn_4_ships_office"/>
+          <feedback_51_regex value="~DEVICE,651,81,9,([0-1])"/>
+          <feedback_51_regex_detail value="keypad_651_1_btn_1_sb_vip_cabin_7"/>
+          <feedback_52_regex value="~DEVICE,651,83,9,([0-1])"/>
+          <feedback_52_regex_detail value="keypad_651_1_btn_3_sb_vip_cabin_7"/>
+          <feedback_53_regex value="~DEVICE,651,85,9,([0-1])"/>
+          <feedback_53_regex_detail value="keypad_651_1_btn_5_sb_vip_cabin_7"/>
+          <feedback_54_regex value="~DEVICE,139,82,9,([0-1])"/>
+          <feedback_54_regex_detail value="keypad_139_2_btn_2_sb_vip_cabin_7"/>
+          <feedback_55_regex value="~DEVICE,139,84,9,([0-1])"/>
+          <feedback_55_regex_detail value="keypad_139_2_btn_4_sb_vip_cabin_7"/>
+          <feedback_56_regex value="~DEVICE,656,81,9,([0-1])"/>
+          <feedback_56_regex_detail value="keypad_656_1_btn_1_ps_vip_cabin_8"/>
+          <feedback_57_regex value="~DEVICE,656,83,9,([0-1])"/>
+          <feedback_57_regex_detail value="keypad_656_1_btn_3_ps_vip_cabin_8"/>
+          <feedback_58_regex value="~DEVICE,656,85,9,([0-1])"/>
+          <feedback_58_regex_detail value="keypad_656_1_btn_5_ps_vip_cabin_8"/>
+          <feedback_59_regex value="~DEVICE,128,82,9,([0-1])"/>
+          <feedback_59_regex_detail value="keypad_128_2_btn_2_ps_vip_cabin_8"/>
+          <feedback_60_regex value="~DEVICE,128,84,9,([0-1])"/>
+          <feedback_60_regex_detail value="keypad_128_2_btn_4_ps_vip_cabin_8"/>
+          <feedback_61_regex value="~DEVICE,148,81,9,([0-1])"/>
+          <feedback_61_regex_detail value="keypad_148_1_btn_1_owners_suite"/>
+          <feedback_62_regex value="~DEVICE,148,83,9,([0-1])"/>
+          <feedback_62_regex_detail value="keypad_148_1_btn_3_owners_suite"/>
+          <feedback_63_regex value="~DEVICE,148,85,9,([0-1])"/>
+          <feedback_63_regex_detail value="keypad_148_1_btn_5_owners_suite"/>
+          <feedback_64_regex value="~DEVICE,120,81,9,([0-1])"/>
+          <feedback_64_regex_detail value="keypad_120_1_btn_1_owners_deck_lounge"/>
+          <feedback_65_regex value="~DEVICE,120,82,9,([0-1])"/>
+          <feedback_65_regex_detail value="keypad_120_1_btn_2_owners_deck_lounge"/>
+          <feedback_66_regex value="~DEVICE,120,83,9,([0-1])"/>
+          <feedback_66_regex_detail value="keypad_120_1_btn_3_owners_deck_lounge"/>
+          <feedback_67_regex value="~DEVICE,143,82,9,([0-1])"/>
+          <feedback_67_regex_detail value="keypad_143_1_btn_2_her_bathroom"/>
+          <feedback_68_regex value="~DEVICE,143,84,9,([0-1])"/>
+          <feedback_68_regex_detail value="keypad_143_1_btn_4_her_bathroom"/>
+          <feedback_69_regex value="~DEVICE,142,81,9,([0-1])"/>
+          <feedback_69_regex_detail value="keypad_142_2_btn_1_her_bathroom"/>
+          <feedback_70_regex value="~DEVICE,142,82,9,([0-1])"/>
+          <feedback_70_regex_detail value="keypad_142_2_btn_2_her_bathroom"/>
+          <feedback_71_regex value="~DEVICE,142,83,9,([0-1])"/>
+          <feedback_71_regex_detail value="keypad_142_2_btn_3_her_bathroom"/>
+          <feedback_72_regex value="~DEVICE,142,84,9,([0-1])"/>
+          <feedback_72_regex_detail value="keypad_142_2_btn_4_her_bathroom"/>
+          <feedback_73_regex value="~DEVICE,146,82,9,([0-1])"/>
+          <feedback_73_regex_detail value="keypad_146_1_btn_2_his_bathroom"/>
+          <feedback_74_regex value="~DEVICE,146,84,9,([0-1])"/>
+          <feedback_74_regex_detail value="keypad_146_1_btn_4_his_bathroom"/>
+          <feedback_75_regex value="~DEVICE,145,81,9,([0-1])"/>
+          <feedback_75_regex_detail value="keypad_145_2_btn_1_his_bathroom"/>
+          <feedback_76_regex value="~DEVICE,145,82,9,([0-1])"/>
+          <feedback_76_regex_detail value="keypad_145_2_btn_2_his_bathroom"/>
+          <feedback_77_regex value="~DEVICE,145,83,9,([0-1])"/>
+          <feedback_77_regex_detail value="keypad_145_2_btn_3_his_bathroom"/>
+          <feedback_78_regex value="~DEVICE,145,84,9,([0-1])"/>
+          <feedback_78_regex_detail value="keypad_145_2_btn_4_his_bathroom"/>
+        </properties>
+      </java-driver>
+    </interface>
+  </interfaces>
+  <components>
+    <!-- Sb Aft Guest Cabin -->
+    <device id="keypad_76_1_sb_aft_guest_cabin">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="1">
+          <command value="keypad_76_1_btn_1_sb_aft_guest_cabin"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_76_1_btn_1_sb_aft_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="3">
+          <command value="keypad_76_1_btn_3_sb_aft_guest_cabin"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_76_1_btn_3_sb_aft_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="5">
+          <command value="keypad_76_1_btn_5_sb_aft_guest_cabin"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_76_1_btn_5_sb_aft_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Sb Aft Guest Cabin -->
+    <device id="keypad_81_2_sb_aft_guest_cabin">
+      <category value="Curtains"/>
+      <priority value="900"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="2">
+          <command value="keypad_81_2_btn_2_sb_aft_guest_cabin"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_81_2_btn_2_sb_aft_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1770"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="4">
+          <command value="keypad_81_2_btn_4_sb_aft_guest_cabin"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_81_2_btn_4_sb_aft_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1760"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Ps Aft Guest Cabin -->
+    <device id="keypad_92_1_ps_aft_guest_cabin">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="1">
+          <command value="keypad_92_1_btn_1_ps_aft_guest_cabin"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_92_1_btn_1_ps_aft_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="3">
+          <command value="keypad_92_1_btn_3_ps_aft_guest_cabin"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_92_1_btn_3_ps_aft_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="5">
+          <command value="keypad_92_1_btn_5_ps_aft_guest_cabin"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_92_1_btn_5_ps_aft_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Ps Aft Guest Cabin -->
+    <device id="keypad_93_2_ps_aft_guest_cabin">
+      <category value="Curtains"/>
+      <priority value="900"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="2">
+          <command value="keypad_93_2_btn_2_ps_aft_guest_cabin"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_93_2_btn_2_ps_aft_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1770"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="4">
+          <command value="keypad_93_2_btn_4_ps_aft_guest_cabin"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_93_2_btn_4_ps_aft_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1760"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Sb Fwd Guest Cabin -->
+    <device id="keypad_83_1_sb_fwd_guest_cabin">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="1">
+          <command value="keypad_83_1_btn_1_sb_fwd_guest_cabin"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_83_1_btn_1_sb_fwd_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="3">
+          <command value="keypad_83_1_btn_3_sb_fwd_guest_cabin"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_83_1_btn_3_sb_fwd_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="5">
+          <command value="keypad_83_1_btn_5_sb_fwd_guest_cabin"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_83_1_btn_5_sb_fwd_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Sb Fwd Guest Cabin -->
+    <device id="keypad_82_2_sb_fwd_guest_cabin">
+      <category value="Curtains"/>
+      <priority value="900"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="2">
+          <command value="keypad_82_2_btn_2_sb_fwd_guest_cabin"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_82_2_btn_2_sb_fwd_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1770"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="4">
+          <command value="keypad_82_2_btn_4_sb_fwd_guest_cabin"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_82_2_btn_4_sb_fwd_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1760"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Ps Fwd Guest Cabin -->
+    <device id="keypad_94_1_ps_fwd_guest_cabin">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="1">
+          <command value="keypad_94_1_btn_1_ps_fwd_guest_cabin"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_94_1_btn_1_ps_fwd_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="3">
+          <command value="keypad_94_1_btn_3_ps_fwd_guest_cabin"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_94_1_btn_3_ps_fwd_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="5">
+          <command value="keypad_94_1_btn_5_ps_fwd_guest_cabin"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_94_1_btn_5_ps_fwd_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Ps Fwd Guest Cabin -->
+    <device id="keypad_99_2_ps_fwd_guest_cabin">
+      <category value="Curtains"/>
+      <priority value="900"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="2">
+          <command value="keypad_99_2_btn_2_ps_fwd_guest_cabin"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_99_2_btn_2_ps_fwd_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1770"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="4">
+          <command value="keypad_99_2_btn_4_ps_fwd_guest_cabin"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_99_2_btn_4_ps_fwd_guest_cabin" equals="1"/>
+          </active>
+          <priority value="1760"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Beauty Salon -->
+    <device id="keypad_73_1_beauty_salon">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="2">
+          <command value="keypad_73_1_btn_2_beauty_salon"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_73_1_btn_2_beauty_salon" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Massage</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="4">
+          <command value="keypad_73_1_btn_4_beauty_salon"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_73_1_btn_4_beauty_salon" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Massage</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Aft Guest Area Wet Lounge -->
+    <device id="keypad_56_1_aft_guest_area_wet_lounge">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="1">
+          <command value="keypad_56_1_btn_1_aft_guest_area_wet_lounge"/>
+          <label value="Open"/>
+          <active>
+            <legacy-condition detail="keypad_56_1_btn_1_aft_guest_area_wet_lounge" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Lounge</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="3">
+          <command value="keypad_56_1_btn_3_aft_guest_area_wet_lounge"/>
+          <label value="Stop"/>
+          <active>
+            <legacy-condition detail="keypad_56_1_btn_3_aft_guest_area_wet_lounge" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Lounge</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="5">
+          <command value="keypad_56_1_btn_5_aft_guest_area_wet_lounge"/>
+          <label value="Close"/>
+          <active>
+            <legacy-condition detail="keypad_56_1_btn_5_aft_guest_area_wet_lounge" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Lounge</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Main Deck Lounge -->
+    <device id="keypad_101_1_main_deck_lounge">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="1">
+          <command value="keypad_101_1_btn_1_main_deck_lounge"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_101_1_btn_1_main_deck_lounge" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Lounge</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="2">
+          <command value="keypad_101_1_btn_2_main_deck_lounge"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_101_1_btn_2_main_deck_lounge" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Lounge</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="3">
+          <command value="keypad_101_1_btn_3_main_deck_lounge"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_101_1_btn_3_main_deck_lounge" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Lounge</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Main Deck Staff Cabin -->
+    <device id="keypad_107_1_main_deck_staff_cabin">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="1">
+          <command value="keypad_107_1_btn_1_main_deck_staff_cabin"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_107_1_btn_1_main_deck_staff_cabin" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="3">
+          <command value="keypad_107_1_btn_3_main_deck_staff_cabin"/>
+          <label value="Sheer"/>
+          <active>
+            <legacy-condition detail="keypad_107_1_btn_3_main_deck_staff_cabin" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="5">
+          <command value="keypad_107_1_btn_5_main_deck_staff_cabin"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_107_1_btn_5_main_deck_staff_cabin" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Guest Cabin No.5 -->
+    <device id="keypad_110_1_guest5">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="1">
+          <command value="keypad_110_1_btn_1_guest5"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_110_1_btn_1_guest5" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="3">
+          <command value="keypad_110_1_btn_3_guest5"/>
+          <label value="Sheer"/>
+          <active>
+            <legacy-condition detail="keypad_110_1_btn_3_guest5" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="5">
+          <command value="keypad_110_1_btn_5_guest5"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_110_1_btn_5_guest5" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Guest Cabin No.5 -->
+    <device id="keypad_114_2_guest5">
+      <category value="Curtains"/>
+      <priority value="900"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="2">
+          <command value="keypad_114_2_btn_2_guest5"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_114_2_btn_2_guest5" equals="1"/>
+          </active>
+          <priority value="1770"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="4">
+          <command value="keypad_114_2_btn_4_guest5"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_114_2_btn_4_guest5" equals="1"/>
+          </active>
+          <priority value="1760"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Guest Cabin No.6 -->
+    <device id="keypad_115_1_guest6">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="1">
+          <command value="keypad_115_1_btn_1_guest6"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_115_1_btn_1_guest6" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="3">
+          <command value="keypad_115_1_btn_3_guest6"/>
+          <label value="Sheer"/>
+          <active>
+            <legacy-condition detail="keypad_115_1_btn_3_guest6" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="5">
+          <command value="keypad_115_1_btn_5_guest6"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_115_1_btn_5_guest6" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Guest Cabin No.6 -->
+    <device id="keypad_119_2_guest6">
+      <category value="Curtains"/>
+      <priority value="900"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="2">
+          <command value="keypad_119_2_btn_2_guest6"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_119_2_btn_2_guest6" equals="1"/>
+          </active>
+          <priority value="1770"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="4">
+          <command value="keypad_119_2_btn_4_guest6"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_119_2_btn_4_guest6" equals="1"/>
+          </active>
+          <priority value="1760"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Gym -->
+    <device id="keypad_153_1_gym">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="2">
+          <command value="keypad_153_1_btn_2_gym"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_153_1_btn_2_gym" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="4">
+          <command value="keypad_153_1_btn_4_gym"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_153_1_btn_4_gym" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Captain's Cabin -->
+    <device id="keypad_157_1_captain">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="2">
+          <command value="keypad_157_1_btn_2_captain"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_157_1_btn_2_captain" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="4">
+          <command value="keypad_157_1_btn_4_captain"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_157_1_btn_4_captain" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Wheelhouse -->
+    <device id="keypad_160_1_wheelhouse">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="1">
+          <command value="keypad_160_1_btn_1_wheelhouse"/>
+          <label value="PS"/>
+          <active>
+            <legacy-condition detail="keypad_160_1_btn_1_wheelhouse" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Wheelhouse Blinds</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="3">
+          <command value="keypad_160_1_btn_3_wheelhouse"/>
+          <label value="FWD"/>
+          <active>
+            <legacy-condition detail="keypad_160_1_btn_3_wheelhouse" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Wheelhouse Blinds</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="5">
+          <command value="keypad_160_1_btn_5_wheelhouse"/>
+          <label value="SB"/>
+          <active>
+            <legacy-condition detail="keypad_160_1_btn_5_wheelhouse" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Wheelhouse Blinds</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Ship's Office -->
+    <device id="keypad_166_1_ships_office">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="2">
+          <command value="keypad_166_1_btn_2_ships_office"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_166_1_btn_2_ships_office" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Office</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="4">
+          <command value="keypad_166_1_btn_4_ships_office"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_166_1_btn_4_ships_office" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Office</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Sb Vip Cabin 7 -->
+    <device id="keypad_651_1_sb_vip_cabin_7">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="1">
+          <command value="keypad_651_1_btn_1_sb_vip_cabin_7"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_651_1_btn_1_sb_vip_cabin_7" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="3">
+          <command value="keypad_651_1_btn_3_sb_vip_cabin_7"/>
+          <label value="Sheer"/>
+          <active>
+            <legacy-condition detail="keypad_651_1_btn_3_sb_vip_cabin_7" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="5">
+          <command value="keypad_651_1_btn_5_sb_vip_cabin_7"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_651_1_btn_5_sb_vip_cabin_7" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Sb Vip Cabin 7 -->
+    <device id="keypad_139_2_sb_vip_cabin_7">
+      <category value="Curtains"/>
+      <priority value="900"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="2">
+          <command value="keypad_139_2_btn_2_sb_vip_cabin_7"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_139_2_btn_2_sb_vip_cabin_7" equals="1"/>
+          </active>
+          <priority value="1770"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="4">
+          <command value="keypad_139_2_btn_4_sb_vip_cabin_7"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_139_2_btn_4_sb_vip_cabin_7" equals="1"/>
+          </active>
+          <priority value="1760"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Ps Vip Cabin 8 -->
+    <device id="keypad_656_1_ps_vip_cabin_8">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="1">
+          <command value="keypad_656_1_btn_1_ps_vip_cabin_8"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_656_1_btn_1_ps_vip_cabin_8" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="3">
+          <command value="keypad_656_1_btn_3_ps_vip_cabin_8"/>
+          <label value="Sheer"/>
+          <active>
+            <legacy-condition detail="keypad_656_1_btn_3_ps_vip_cabin_8" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="5">
+          <command value="keypad_656_1_btn_5_ps_vip_cabin_8"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_656_1_btn_5_ps_vip_cabin_8" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Ps Vip Cabin 8 -->
+    <device id="keypad_128_2_ps_vip_cabin_8">
+      <category value="Curtains"/>
+      <priority value="900"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="2">
+          <command value="keypad_128_2_btn_2_ps_vip_cabin_8"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_128_2_btn_2_ps_vip_cabin_8" equals="1"/>
+          </active>
+          <priority value="1770"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="4">
+          <command value="keypad_128_2_btn_4_ps_vip_cabin_8"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_128_2_btn_4_ps_vip_cabin_8" equals="1"/>
+          </active>
+          <priority value="1760"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Owner's Suite -->
+    <device id="keypad_148_1_owners_suite">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="1">
+          <command value="keypad_148_1_btn_1_owners_suite"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_148_1_btn_1_owners_suite" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="3">
+          <command value="keypad_148_1_btn_3_owners_suite"/>
+          <label value="Sheer"/>
+          <active>
+            <legacy-condition detail="keypad_148_1_btn_3_owners_suite" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="5">
+          <command value="keypad_148_1_btn_5_owners_suite"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_148_1_btn_5_owners_suite" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Owner's Deck Lounge -->
+    <device id="keypad_120_1_owners_deck_lounge">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="1">
+          <command value="keypad_120_1_btn_1_owners_deck_lounge"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_120_1_btn_1_owners_deck_lounge" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="2">
+          <command value="keypad_120_1_btn_2_owners_deck_lounge"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_120_1_btn_2_owners_deck_lounge" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="3">
+          <command value="keypad_120_1_btn_3_owners_deck_lounge"/>
+          <label value="Sheer"/>
+          <active>
+            <legacy-condition detail="keypad_120_1_btn_3_owners_deck_lounge" equals="1"/>
+          </active>
+          <priority value="1880"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Cabin</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Her Bathroom -->
+    <device id="keypad_143_1_her_bathroom">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="2">
+          <command value="keypad_143_1_btn_2_her_bathroom"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_143_1_btn_2_her_bathroom" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="4">
+          <command value="keypad_143_1_btn_4_her_bathroom"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_143_1_btn_4_her_bathroom" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- Her Bathroom -->
+    <device id="keypad_142_2_her_bathroom">
+      <category value="Curtains"/>
+      <priority value="900"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="1">
+          <command value="keypad_142_2_btn_1_her_bathroom"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_142_2_btn_1_her_bathroom" equals="1"/>
+          </active>
+          <priority value="1780"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Her Wardrobe</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="2">
+          <command value="keypad_142_2_btn_2_her_bathroom"/>
+          <label value="Sheer"/>
+          <active>
+            <legacy-condition detail="keypad_142_2_btn_2_her_bathroom" equals="1"/>
+          </active>
+          <priority value="1770"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Her Wardrobe</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="3">
+          <command value="keypad_142_2_btn_3_her_bathroom"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_142_2_btn_3_her_bathroom" equals="1"/>
+          </active>
+          <priority value="1760"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Her Wardrobe</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="4">
+          <command value="keypad_142_2_btn_4_her_bathroom"/>
+          <label value="Closet"/>
+          <active>
+            <legacy-condition detail="keypad_142_2_btn_4_her_bathroom" equals="1"/>
+          </active>
+          <priority value="1750"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Her Wardrobe</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- His Bathroom -->
+    <device id="keypad_146_1_his_bathroom">
+      <category value="Curtains"/>
+      <priority value="1000"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="2">
+          <command value="keypad_146_1_btn_2_his_bathroom"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_146_1_btn_2_his_bathroom" equals="1"/>
+          </active>
+          <priority value="1900"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="4">
+          <command value="keypad_146_1_btn_4_his_bathroom"/>
+          <label value="Sheers"/>
+          <active>
+            <legacy-condition detail="keypad_146_1_btn_4_his_bathroom" equals="1"/>
+          </active>
+          <priority value="1890"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:Bathroom</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- His Bathroom -->
+    <device id="keypad_145_2_his_bathroom">
+      <category value="Curtains"/>
+      <priority value="900"/>
+      <state value="none"/>
+      <utility value="true"/>
+      <icon value="comfort_curtain"/>
+      <settings>
+        <trigger id="1">
+          <command value="keypad_145_2_btn_1_his_bathroom"/>
+          <label value="Curtains"/>
+          <active>
+            <legacy-condition detail="keypad_145_2_btn_1_his_bathroom" equals="1"/>
+          </active>
+          <priority value="1780"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:His Dressing</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="2">
+          <command value="keypad_145_2_btn_2_his_bathroom"/>
+          <label value="Sheer"/>
+          <active>
+            <legacy-condition detail="keypad_145_2_btn_2_his_bathroom" equals="1"/>
+          </active>
+          <priority value="1770"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:His Dressing</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="3">
+          <command value="keypad_145_2_btn_3_his_bathroom"/>
+          <label value="Blinds"/>
+          <active>
+            <legacy-condition detail="keypad_145_2_btn_3_his_bathroom" equals="1"/>
+          </active>
+          <priority value="1760"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:His Dressing</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+        <trigger id="4">
+          <command value="keypad_145_2_btn_4_his_bathroom"/>
+          <label value="Closet"/>
+          <active>
+            <legacy-condition detail="keypad_145_2_btn_4_his_bathroom" equals="1"/>
+          </active>
+          <priority value="1750"/>
+          <supports-startstop value="true"/>
+          <general-tags>
+            <tag>group:His Dressing</tag>
+            <tag>group_icon:comfort_group_curtain</tag>
+            <tag>master</tag>
+          </general-tags>
+          <products>
+            <product value="curtain"/>
+          </products>
+        </trigger>
+      </settings>
+      <components>
+        <port id="in">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <port id="out">
+          <products>
+            <product value="curtain"/>
+          </products>
+        </port>
+        <link from="in" to="out"/>
+      </components>
+    </device>
+    <!-- links -->
+    <link from="out" to="keypad_76_1_sb_aft_guest_cabin.in"/>
+    <link from="out" to="keypad_81_2_sb_aft_guest_cabin.in"/>
+    <link from="out" to="keypad_92_1_ps_aft_guest_cabin.in"/>
+    <link from="out" to="keypad_93_2_ps_aft_guest_cabin.in"/>
+    <link from="out" to="keypad_83_1_sb_fwd_guest_cabin.in"/>
+    <link from="out" to="keypad_82_2_sb_fwd_guest_cabin.in"/>
+    <link from="out" to="keypad_94_1_ps_fwd_guest_cabin.in"/>
+    <link from="out" to="keypad_99_2_ps_fwd_guest_cabin.in"/>
+    <link from="out" to="keypad_73_1_beauty_salon.in"/>
+    <link from="out" to="keypad_56_1_aft_guest_area_wet_lounge.in"/>
+    <link from="out" to="keypad_101_1_main_deck_lounge.in"/>
+    <link from="out" to="keypad_107_1_main_deck_staff_cabin.in"/>
+    <link from="out" to="keypad_110_1_guest5.in"/>
+    <link from="out" to="keypad_114_2_guest5.in"/>
+    <link from="out" to="keypad_115_1_guest6.in"/>
+    <link from="out" to="keypad_119_2_guest6.in"/>
+    <link from="out" to="keypad_153_1_gym.in"/>
+    <link from="out" to="keypad_157_1_captain.in"/>
+    <link from="out" to="keypad_160_1_wheelhouse.in"/>
+    <link from="out" to="keypad_166_1_ships_office.in"/>
+    <link from="out" to="keypad_651_1_sb_vip_cabin_7.in"/>
+    <link from="out" to="keypad_139_2_sb_vip_cabin_7.in"/>
+    <link from="out" to="keypad_656_1_ps_vip_cabin_8.in"/>
+    <link from="out" to="keypad_128_2_ps_vip_cabin_8.in"/>
+    <link from="out" to="keypad_148_1_owners_suite.in"/>
+    <link from="out" to="keypad_120_1_owners_deck_lounge.in"/>
+    <link from="out" to="keypad_143_1_her_bathroom.in"/>
+    <link from="out" to="keypad_142_2_her_bathroom.in"/>
+    <link from="out" to="keypad_146_1_his_bathroom.in"/>
+    <link from="out" to="keypad_145_2_his_bathroom.in"/>
+    <!-- producer and output -->
+    <producer id="curtainproducer">
+      <products>
+        <product value="curtain"/>
+      </products>
+    </producer>
+    <port id="out">
+      <products>
+        <product value="curtain"/>
+      </products>
+    </port>
+    <link from="curtainproducer" to="out"/>
+  </components>
+</device>

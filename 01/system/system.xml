@@ -13,6 +13,9 @@
   <merge include="maindeck/galley.xml"/>
   <merge include="maindeck/bar.xml"/>
   <merge include="maindeck/owner_stateroom.xml"/>
+  <!--Lighting & Blinds-->
+  <merge include="comfort_lighting.xml"/>
+  <merge include="comfort_blinds.xml"/>
   <!-- Remotes -->
   <remotes>
     <!-- Define the Plejd remote -->

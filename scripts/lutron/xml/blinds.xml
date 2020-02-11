@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<system xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="730dff4a-bc63-11e6-b892-c8e0eb171521"
+        xmlns="http://www.plejd.com/schema/System"
+        xsi:schemaLocation="http://www.plejd.com/schema/System ../../../idoru-xmlschema/System.xsd">
+    <label value="Sasha"/>
+        $locations
+    <devices>
+        <device id="blinds">
+            <prototype value="vbh:13698:blinds"/>
+            <interface id="main">
+                <channel id="network">
+                    <provider value="network"/>
+                    <address value="10.10.134.30"/>
+                    <autoconnect value="true"/>
+                </channel>
+            </interface>
+            <connections>
+                $connections
+            </connections>
+        </device>
+        $devices
+    </devices>
+</system>

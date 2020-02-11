@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device xmlns="http://www.plejd.com/schema/Device" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.plejd.com/schema/Device ../../../../idoru-xmlschema/Device.xsd">
+   <state value="none"/>
+   <label value="Lutron"/>
+   <utility value="true"/>
+   <icon value="$icon"/>
+   <category value="$cat"/>
+   <!-- 
+      Generated: $date
+   -->
+   <interfaces>
+      <interface id="dummy">
+         <java-driver>
+            <class value="com.plejd.idoru.dummy.devicedrv.DummyDriver"/>
+         </java-driver>
+      </interface>
+      <interface id="main">
+         <channel id="network">
+            <type value="packet"/>
+            <properties>
+               <port value="23"/>
+               <packet-end_hex value="0d 0a"/>
+               <!-- what you receive -->
+               <packet-suffix_hex value="0d 0a"/>
+               <!-- what you send -->
+            </properties>
+         </channel>
+         <java-driver>
+            <class value="com.plejd.drivers.xml.GenericControlDriver"/>
+            <properties>
+               <duration value="0"/>
+               <on-open_network_sequence_1_alias value="pivot_send_user"/>
+               <on-open_network_sequence_1_delay value="2000"/>
+               <on-open_network_sequence_2_alias value="pivot_send_password"/>
+               <on-open_network_sequence_2_delay value="2000"/>
+               $network_open_sequence
+               <pivot_send_user value="$user"/>
+               <pivot_send_password value="$password"/>
+               <!-- will be prompted with login -->
+               <network_ping value="?SYSTEM,1"/>
+               <!--
+                  commands
+            -->
+               $cmds
+               <!-- 
+                  feedback for button status 
+            -->
+               $fb
+            </properties>
+         </java-driver>
+      </interface>
+   </interfaces>
+   <components>
+      $devices
+      <!-- links -->
+      $links
+      <!-- producer and output -->
+      $producer
+   </components>
+</device>

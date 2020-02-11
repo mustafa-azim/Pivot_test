@@ -1,0 +1,421 @@
+<?xml version="1.0" ?>
+<system id="730dff4a-bc63-11e6-b892-c8e0eb171521" xmlns="http://www.plejd.com/schema/System" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.plejd.com/schema/System ../../../idoru-xmlschema/System.xsd">
+  <label value="Sasha"/>
+  <locations>
+    <level id="lowerdeck">
+      <areas>
+        <area id="sb_aft_guest_cabin">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_76_1_sb_aft_guest_cabin"/>
+                <device value="blinds76_1-sb_aft_guest_cabin"/>
+                <device value="blinds.keypad_81_2_sb_aft_guest_cabin"/>
+                <device value="blinds81_2-sb_aft_guest_cabin"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+        <area id="ps_aft_guest_cabin">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_92_1_ps_aft_guest_cabin"/>
+                <device value="blinds92_1-ps_aft_guest_cabin"/>
+                <device value="blinds.keypad_93_2_ps_aft_guest_cabin"/>
+                <device value="blinds93_2-ps_aft_guest_cabin"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+        <area id="sb_fwd_guest_cabin">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_83_1_sb_fwd_guest_cabin"/>
+                <device value="blinds83_1-sb_fwd_guest_cabin"/>
+                <device value="blinds.keypad_82_2_sb_fwd_guest_cabin"/>
+                <device value="blinds82_2-sb_fwd_guest_cabin"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+        <area id="ps_fwd_guest_cabin">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_94_1_ps_fwd_guest_cabin"/>
+                <device value="blinds94_1-ps_fwd_guest_cabin"/>
+                <device value="blinds.keypad_99_2_ps_fwd_guest_cabin"/>
+                <device value="blinds99_2-ps_fwd_guest_cabin"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+        <area id="beauty_salon">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_73_1_beauty_salon"/>
+                <device value="blinds73_1-beauty_salon"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+        <area id="aft_guest_area_wet_lounge">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_56_1_aft_guest_area_wet_lounge"/>
+                <device value="blinds56_1-aft_guest_area_wet_lounge"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+      </areas>
+    </level>
+    <level id="maindeck">
+      <areas>
+        <area id="main_deck_lounge">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_101_1_main_deck_lounge"/>
+                <device value="blinds101_1-main_deck_lounge"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+        <area id="main_deck_dining">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_101_1_main_deck_lounge"/>
+                <device value="blinds101_1-main_deck_dining"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+        <area id="main_deck_staff_cabin">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_107_1_main_deck_staff_cabin"/>
+                <device value="blinds107_1-main_deck_staff_cabin"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+        <area id="guest5">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_110_1_guest5"/>
+                <device value="blinds110_1-guest5"/>
+                <device value="blinds.keypad_114_2_guest5"/>
+                <device value="blinds114_2-guest5"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+        <area id="guest6">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_115_1_guest6"/>
+                <device value="blinds115_1-guest6"/>
+                <device value="blinds.keypad_119_2_guest6"/>
+                <device value="blinds119_2-guest6"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+      </areas>
+    </level>
+    <level id="bridgedeck">
+      <areas>
+        <area id="gym">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_153_1_gym"/>
+                <device value="blinds153_1-gym"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+        <area id="captain">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_157_1_captain"/>
+                <device value="blinds157_1-captain"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+        <area id="wheelhouse">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_160_1_wheelhouse"/>
+                <device value="blinds160_1-wheelhouse"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+        <area id="ships_office">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_166_1_ships_office"/>
+                <device value="blinds166_1-ships_office"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+      </areas>
+    </level>
+    <level id="ownersdeck">
+      <areas>
+        <area id="sb_vip_cabin_7">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_651_1_sb_vip_cabin_7"/>
+                <device value="blinds651_1-sb_vip_cabin_7"/>
+                <device value="blinds.keypad_139_2_sb_vip_cabin_7"/>
+                <device value="blinds139_2-sb_vip_cabin_7"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+        <area id="ps_vip_cabin_8">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_656_1_ps_vip_cabin_8"/>
+                <device value="blinds656_1-ps_vip_cabin_8"/>
+                <device value="blinds.keypad_128_2_ps_vip_cabin_8"/>
+                <device value="blinds128_2-ps_vip_cabin_8"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+        <area id="owners_suite">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_148_1_owners_suite"/>
+                <device value="blinds148_1-owners_suite"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+        <area id="owners_deck_lounge">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_120_1_owners_deck_lounge"/>
+                <device value="blinds120_1-owners_deck_lounge"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+        <area id="her_bathroom">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_143_1_her_bathroom"/>
+                <device value="blinds143_1-her_bathroom"/>
+                <device value="blinds.keypad_142_2_her_bathroom"/>
+                <device value="blinds142_2-her_bathroom"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+        <area id="his_bathroom">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blinds.keypad_146_1_his_bathroom"/>
+                <device value="blinds146_1-his_bathroom"/>
+                <device value="blinds.keypad_145_2_his_bathroom"/>
+                <device value="blinds145_2-his_bathroom"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+      </areas>
+    </level>
+  </locations>
+  <devices>
+    <device id="blinds">
+      <prototype value="vbh:13698:blinds"/>
+      <interface id="main">
+        <channel id="network">
+          <provider value="network"/>
+          <address value="10.10.134.30"/>
+          <autoconnect value="true"/>
+        </channel>
+      </interface>
+      <connections>
+        <connection port="keypad_76_1_sb_aft_guest_cabin.out" targetdevice="blinds76_1-sb_aft_guest_cabin" targetport="in"/>
+        <connection port="keypad_81_2_sb_aft_guest_cabin.out" targetdevice="blinds81_2-sb_aft_guest_cabin" targetport="in"/>
+        <connection port="keypad_92_1_ps_aft_guest_cabin.out" targetdevice="blinds92_1-ps_aft_guest_cabin" targetport="in"/>
+        <connection port="keypad_93_2_ps_aft_guest_cabin.out" targetdevice="blinds93_2-ps_aft_guest_cabin" targetport="in"/>
+        <connection port="keypad_83_1_sb_fwd_guest_cabin.out" targetdevice="blinds83_1-sb_fwd_guest_cabin" targetport="in"/>
+        <connection port="keypad_82_2_sb_fwd_guest_cabin.out" targetdevice="blinds82_2-sb_fwd_guest_cabin" targetport="in"/>
+        <connection port="keypad_94_1_ps_fwd_guest_cabin.out" targetdevice="blinds94_1-ps_fwd_guest_cabin" targetport="in"/>
+        <connection port="keypad_99_2_ps_fwd_guest_cabin.out" targetdevice="blinds99_2-ps_fwd_guest_cabin" targetport="in"/>
+        <connection port="keypad_73_1_beauty_salon.out" targetdevice="blinds73_1-beauty_salon" targetport="in"/>
+        <connection port="keypad_56_1_aft_guest_area_wet_lounge.out" targetdevice="blinds56_1-aft_guest_area_wet_lounge" targetport="in"/>
+        <connection port="keypad_101_1_main_deck_lounge.out" targetdevice="blinds101_1-main_deck_lounge" targetport="in"/>
+        <connection port="keypad_101_1_main_deck_lounge.out" targetdevice="blinds101_1-main_deck_dining" targetport="in"/>
+        <connection port="keypad_107_1_main_deck_staff_cabin.out" targetdevice="blinds107_1-main_deck_staff_cabin" targetport="in"/>
+        <connection port="keypad_110_1_guest5.out" targetdevice="blinds110_1-guest5" targetport="in"/>
+        <connection port="keypad_114_2_guest5.out" targetdevice="blinds114_2-guest5" targetport="in"/>
+        <connection port="keypad_115_1_guest6.out" targetdevice="blinds115_1-guest6" targetport="in"/>
+        <connection port="keypad_119_2_guest6.out" targetdevice="blinds119_2-guest6" targetport="in"/>
+        <connection port="keypad_153_1_gym.out" targetdevice="blinds153_1-gym" targetport="in"/>
+        <connection port="keypad_157_1_captain.out" targetdevice="blinds157_1-captain" targetport="in"/>
+        <connection port="keypad_160_1_wheelhouse.out" targetdevice="blinds160_1-wheelhouse" targetport="in"/>
+        <connection port="keypad_166_1_ships_office.out" targetdevice="blinds166_1-ships_office" targetport="in"/>
+        <connection port="keypad_651_1_sb_vip_cabin_7.out" targetdevice="blinds651_1-sb_vip_cabin_7" targetport="in"/>
+        <connection port="keypad_139_2_sb_vip_cabin_7.out" targetdevice="blinds139_2-sb_vip_cabin_7" targetport="in"/>
+        <connection port="keypad_656_1_ps_vip_cabin_8.out" targetdevice="blinds656_1-ps_vip_cabin_8" targetport="in"/>
+        <connection port="keypad_128_2_ps_vip_cabin_8.out" targetdevice="blinds128_2-ps_vip_cabin_8" targetport="in"/>
+        <connection port="keypad_148_1_owners_suite.out" targetdevice="blinds148_1-owners_suite" targetport="in"/>
+        <connection port="keypad_120_1_owners_deck_lounge.out" targetdevice="blinds120_1-owners_deck_lounge" targetport="in"/>
+        <connection port="keypad_143_1_her_bathroom.out" targetdevice="blinds143_1-her_bathroom" targetport="in"/>
+        <connection port="keypad_142_2_her_bathroom.out" targetdevice="blinds142_2-her_bathroom" targetport="in"/>
+        <connection port="keypad_146_1_his_bathroom.out" targetdevice="blinds146_1-his_bathroom" targetport="in"/>
+        <connection port="keypad_145_2_his_bathroom.out" targetdevice="blinds145_2-his_bathroom" targetport="in"/>
+      </connections>
+    </device>
+    <device id="blinds76_1-sb_aft_guest_cabin">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds81_2-sb_aft_guest_cabin">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds92_1-ps_aft_guest_cabin">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds93_2-ps_aft_guest_cabin">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds83_1-sb_fwd_guest_cabin">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds82_2-sb_fwd_guest_cabin">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds94_1-ps_fwd_guest_cabin">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds99_2-ps_fwd_guest_cabin">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds73_1-beauty_salon">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds56_1-aft_guest_area_wet_lounge">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds101_1-main_deck_lounge">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds101_1-main_deck_dining">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds107_1-main_deck_staff_cabin">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds110_1-guest5">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds114_2-guest5">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds115_1-guest6">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds119_2-guest6">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds153_1-gym">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds157_1-captain">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds160_1-wheelhouse">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds166_1-ships_office">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds651_1-sb_vip_cabin_7">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds139_2-sb_vip_cabin_7">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds656_1-ps_vip_cabin_8">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds128_2-ps_vip_cabin_8">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds148_1-owners_suite">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds120_1-owners_deck_lounge">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds143_1-her_bathroom">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds142_2-her_bathroom">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds146_1-his_bathroom">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+    <device id="blinds145_2-his_bathroom">
+      <prototype value="generic:curtain:1"/>
+      <label value="Curtains"/>
+    </device>
+  </devices>
+</system>
