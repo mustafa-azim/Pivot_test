@@ -1,32 +1,3 @@
-<<<<<<< HEAD
-<?xml version="1.0" ?>
-<system id="101a54c0-4986-11ea-8c0b-8cec4b009550" xmlns="http://www.plejd.com/schema/System" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.plejd.com/schema/System ../../../idoru-xmlschema/System.xsd">
-  <beacon-region value=""/>
-  <label value="MustafaYacht"/>
-  <url value="http://www.google.com/"/>
-  <description>
-  </description>
-  <!-- Lower Deck -->
-  <merge include="lowerdeck/crew_mess.xml"/>
-  <merge include="lowerdeck/mini_beach_club.xml"/>
-  <merge include="lowerdeck/guest_suite.xml"/>
-  <!-- Main Deck -->
-  <merge include="maindeck/galley.xml"/>
-  <merge include="maindeck/bar.xml"/>
-  <merge include="maindeck/owner_stateroom.xml"/>
-  <!--Lighting & Blinds-->
-  <merge include="comfort_lighting.xml"/>
-  <merge include="comfort_blinds.xml"/>
-  <!-- Remotes -->
-  <remotes>
-    <!-- Define the Plejd remote -->
-    <prcpremote id="prcp">
-      <port value="8000"/>
-      <verbose value="0"/>
-    </prcpremote>
-    <webremote id="web"/>
-  </remotes>
-=======
 <?xml version="1.0" ?>
 <system id="101a54c0-4986-11ea-8c0b-8cec4b009550" xmlns="http://www.plejd.com/schema/System" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.plejd.com/schema/System ../../../idoru-xmlschema/System.xsd">
   <beacon-region value=""/>
@@ -51,5 +22,4 @@
     </prcpremote>
     <webremote id="web"/>
   </remotes>
->>>>>>> parent of 06d608c... Rev2
 </system>
