@@ -18,7 +18,8 @@
   <merge include="lighting.xml"/>
   <!--Blinds-->
   <merge include="blinds.xml"/>
-
+  <!--HVAC-->
+  <merge include="hvac.xml"/>
   <!-- Remotes -->
   <remotes>
     <!-- Define the Plejd remote -->

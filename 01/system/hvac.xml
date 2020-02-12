@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<system id="101a54c0-4986-11ea-8c0b-8cec4b009550" xmlns="http://www.plejd.com/schema/System" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.plejd.com/schema/System ../../../idoru-xmlschema/System.xsd">
+  <label value="MustafaYacht"/>
+  
+  <!--Define levels/areas/devices here-->
+  <locations>
+    <level id="maindeck">
+      <areas>
+        <area id="owner_stateroom">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="hvac1"/>
+              </devices>
+            </zone>
+            <zone id="bathroom">
+              <devices>
+              <device value="ac1"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+      </areas>
+    </level>
+  </locations>
+
+  <devices>
+    
+    <device id="hvac1">
+			<prototype value="vbh:hh:ac"/>
+			<label value="Climate"/>
+			<priority value="69"/>
+			<interface id="main">
+				<channel id="network">
+					<provider value="network"/>
+					<address value="10.10.132.50"/> <!-- check IP address for hvac -->
+				</channel>
+				<driver>
+					<!-- MDR-785-MDR -->
+					<slave value="2"/>
+					<!-- setup -->
+					<mintemp value="15.0"/>
+					<maxtemp value="25.0"/>
+					<!-- function codes -->
+					<readtemp_fc value="4"/>
+					<readsetpoint_fc value="3"/>
+					<!-- registers -->
+					<readtemp value="14"/>
+					<readsetpoint value="10"/>
+					<writesetpoint value="10"/>
+					<!-- inc/dec step size -->
+					<steptemp value="1"/>
+				</driver>
+			</interface>
+		</device> 
+    
+    <device id="ac1">
+      <prototype value="mitsubishi:ac:1"/>
+      <label value="Climate Bathroom"/>
+      <priority value="70"/>
+      <interface id="main">
+        <channel id="ir"/>
+        
+      </interface>
+    
+    </device>
+  </devices>
+  
+ </system>
