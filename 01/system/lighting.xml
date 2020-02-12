@@ -61,12 +61,12 @@
               <connector value="318"/>    <!--Keypad ID from integration report-->
             </channel>
           </interface>
-        </device>
+    </device>
 
-    <device id="lighting2_downlight">
+    <device id="lighting2_uplight">
           <prototype value="lutron:hwqs:zone" />
-          <priority value="800"/>
-          <label value="Downlights 2"/>
+          <priority value="700"/>
+          <label value="Uplight 2"/>
           <interface id="main">
             <channel id="network">
               <provider value="network"/>
@@ -74,12 +74,12 @@
               <connector value="319"/>    <!--Keypad ID from integration report-->
             </channel>
           </interface>
-        </device>
+    </device>
 
-    <device id="lighting3_downlight">
+    <device id="lighting3_walllight">
           <prototype value="lutron:hwqs:zone" />
-          <priority value="800"/>
-          <label value="Downlights 3"/>
+          <priority value="600"/>
+          <label value="Wall light 3"/>
           <interface id="main">
             <channel id="network">
               <provider value="network"/>
@@ -87,7 +87,7 @@
               <connector value="320"/>    <!--Keypad ID from integration report-->
             </channel>
           </interface>
-        </device>
+    </device>
 
   </devices>
   
