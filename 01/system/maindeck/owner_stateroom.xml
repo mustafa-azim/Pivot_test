@@ -27,7 +27,7 @@
               <icon value=""/>
               <description>
                     </description>
-              <devices>
+              <devices>         <!--Define the devices here for the main zone-->
                 <device value="tv-owner_stateroom"/>
                 <device value="speakers-owner_stateroom"/>
                 <device value="appletv-owner_stateroom"/>
@@ -50,7 +50,7 @@
     </level>
   </locations>
   <devices>
-
+            <!--Reference the devices here with the the configurations-->
     <device id="denonavreceiver-owner_stateroom">
       <label value="Denon AV Receiver"/>
       <prototype value="denon:x4000:1"/>

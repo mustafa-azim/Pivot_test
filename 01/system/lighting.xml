@@ -22,23 +22,50 @@
     </level>
   </locations>
 
-  <devices>     <!--Keypad1_hwqs_lutron-->
+  <devices>
+      <!--HWQS Processor it is recommended to put the processor in a different XML file in rack-->
+  <device id="processor-lutron">
+        <prototype value="lutron:hwqs:processor"/>
+        <interface id="main">
+          <channel id="network">
+            <provider value="network"/>
+            <address value="10.10.132.20"/>
+          </channel>
+                    <!--use it when you want to control audio volume from keypad-->
+          <!-- <channel id="http">     
+            <provider value="network"/>
+            <address value="10.10.99.100"/>
+            <verbose value="3"/>
+          </channel> -->
+          <driver>
+            <username value="VBH"/> <!--Lutron Telnet credintials-->
+            <password value="Volpini2Lutron"/>
+            <!--needed only when you want to control audio volume from keypad-->
+            <!-- <api_username value="root"/>
+            <api_pin value="0000"/> -->
+            <processor value="true"/>
+          </driver>
+        </interface>
+      </device>
+  
+       <!--Keypad1_hwqs_lutron-->
     <device id="keypad1_hwqs_lutron">
       <prototype value="lutron:hwqs:keypad"/>
       <label value="Lights"/>
       <priority value="1000"/>
-			<category value="Lights"/>
+			<category value="Lights"/>    <!--The app will add all lights and keypads in environment tab, and if you don't want that chage this value-->
 			<icon value="comfort_light"/>
 			<label value="Lights"/>
 			<interface id="main">
 				<channel id="network">
+        <!-- <verbose value="2"/> -->        <!--used to debug only-->
 					<provider value="network"/>
 					<address value="10.10.132.20"/>
 					<connector value="3"/>    <!--Keypad ID from integration report-->
 				</channel>
           <driver>
-					<verbose value="3"/>
-					<on-start_1_detail value="buttons:5:label"/>
+					<!-- <verbose value="3"/> -->    <!--used to debug only-->
+					<on-start_1_detail value="buttons:5:label"/>      <!--buttons:number of the button from the integration report:label-->
 					<on-start_1_value value="High"/>
 					<on-start_2_detail value="buttons:6:label"/>
 					<on-start_2_value value="Mid"/>
@@ -80,14 +107,44 @@
           <prototype value="lutron:hwqs:zone" />
           <priority value="600"/>
           <label value="Wall light 3"/>
+          <category value="More lights|"/>
           <interface id="main">
             <channel id="network">
               <provider value="network"/>
               <address value="10.10.132.20"/>
               <connector value="320"/>    <!--Keypad ID from integration report-->
             </channel>
+            <driver>      <!--Special effects are added here optionally to override the driver-->
+              <on-start_1_detail value="fadetime"/>
+              <on-start_1_value value="00:00:05"/>
+              <on-start_2_detail value="max"/>
+              <on-start_2_value value="50"/>
+            </driver>
+            
+            
+            
+            <!-- <details>         
+              <detail id="last">
+                <number value="90"/>
+              </detail>
+              <detail id="level">
+                <number value="0"/>
+              </detail>
+              <detail id="fadetime">
+                <string value="00:00:05"/>
+              </detail>
+              <detail id="max">
+                <number value="91"/>
+              </detail>
+              <detail id="min">
+                <number value="0"/>
+              </detail>
+
+            </details> -->
           </interface>
     </device>
+
+    
 
   </devices>
   

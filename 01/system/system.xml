@@ -16,7 +16,8 @@
   
   <!--Lighting-->
   <merge include="lighting.xml"/>
-  
+  <!--Blinds-->
+  <merge include="blinds.xml"/>
 
   <!-- Remotes -->
   <remotes>

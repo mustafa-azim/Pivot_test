@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<system id="101a54c0-4986-11ea-8c0b-8cec4b009550" xmlns="http://www.plejd.com/schema/System" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.plejd.com/schema/System ../../../idoru-xmlschema/System.xsd">
+  <label value="MustafaYacht"/>
+  
+  <!--Define levels/areas/devices here-->
+  <locations>
+    <level id="maindeck">
+      <areas>
+        <area id="owner_stateroom">
+          <zones>
+            <zone id="main">
+              <devices>
+                <device value="blind1"/>
+                <device value="blind2"/>
+                <device value="keypad2_hwqs_lutron"/>
+              </devices>
+            </zone>
+          </zones>
+        </area>
+      </areas>
+    </level>
+  </locations>
+
+  <devices>
+    <device id="blind1">
+			<prototype value="lutron:hwqs:keypad"/>
+			<label value="Blinds"/>
+			<priority value="900"/>
+			<category value="Curtains"/>
+			<icon value="comfort_curtain"/>
+			<label value="Black-out"/>
+			<interface id="main">
+				<channel id="network">
+					<provider value="network"/>
+					<address value="10.10.132.20"/>
+					<connector value="17"/>     <!--Integration ID from integration report-->
+				</channel>
+				<driver>
+					<on-start_1_detail value="buttons:1:label"/>
+					<on-start_1_value value="Open1"/>
+          <on-start_2_detail value="buttons:2:label"/>
+					<on-start_2_value value="Close1"/>
+          <on-start_3_detail value="buttons:3:label"/>
+					<on-start_3_value value="Open2"/>
+					<on-start_4_detail value="buttons:4:label"/>
+					<on-start_4_value value="Close2"/>
+				</driver>
+			</interface>
+		</device>
+    
+
+  </devices>
+  
+ </system>
